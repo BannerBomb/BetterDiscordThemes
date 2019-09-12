@@ -5491,12 +5491,38 @@
 	color: #fff
 }
 
+.lightTheme-3LGLQs.container-2XeR5Z {
+	background-color: #e3e5e8
+}
+.lightTheme-3LGLQs .icon-3cZ1F_ {
+	color: #9099a4
+}
+.lightTheme-3LGLQs .input-1Rv96N {
+	color: #747f8d
+}
+.lightTheme-3LGLQs .input-1Rv96N::-webkit-input-placeholder {
+	color: #9099a4
+}
+.lightTheme-3LGLQs .tag-2gHSR7 {
+	background: #7289da;
+	color: #f8f9f9
+}
+.lightTheme-3LGLQs .tag-2gHSR7:hover {
+	background: #7d92dd
+}
+.lightTheme-3LGLQs .tag-2gHSR7:hover .close-3WVtCL {
+	color: #fff
+}
+
+
 .members-1998pB {
 	max-width: 240px;
 	background-color: #f3f3f3;
 	padding: 0 0 20px;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	box-sizing: unset;
+	-webkit-box-sizing: unset;
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1
@@ -5507,5 +5533,72 @@
 	text-overflow: ellipsis;
 	overflow: hidden;
 	color: unset;
-	font-weight: unset;
+	font-weight: unset
+}
+
+.chat .base-34jWEe h1 {
+	font-weight: 500;
+	color: #949494;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0
+}
+
+.base-34jWEe strong {
+	font-weight: 700
+}
+
+.base-34jWEe+.message-group-blocked {
+	margin-top: 12px
+}
+
+.base-34jWEe h1 {
+	color: #949494;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	margin: 0
+}
+
+.default-1VPH9n {
+	margin-left: 20px;
+	margin-right: 20px
+}
+
+.privateChannels-1nO12o {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+
+.privateChannels-1nO12o header {
+	font-size: 12px;
+	color: #fff;
+	opacity: .3;
+	text-transform: uppercase;
+	font-weight: 500;
+	-webkit-transition: opacity .15s ease;
+	transition: opacity .15s ease;
+	padding: 9px 20px;
+	display: block;
+	cursor: default;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 12px
 }

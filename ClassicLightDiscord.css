@@ -1,3 +1,12 @@
+/** 
+ * @name ClassicLightDiscord
+ * @author BannerBomb
+ * @version 1.1
+ * @description Replaces discords light theme back to it's original state before the update
+ * @source https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicLightDiscord.theme.css
+ * @website https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicLightDiscord.theme.css
+*/
+
 .theme-light {
 	--header-primary: #fff;
 	--header-secondary: #b9bbbe;
@@ -5601,4 +5610,8 @@
 	text-overflow: ellipsis;
 	overflow: hidden;
 	margin-top: 12px
+}
+
+.user-3x-NP9 {
+	color: #caccce
 }

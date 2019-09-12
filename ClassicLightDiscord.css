@@ -5500,4 +5500,21 @@
 	color: #fff
 }
 
+.members-1998pB {
+	max-width: 240px;
+	background-color: #f3f3f3;
+	padding: 0 0 20px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
 
+.friendsTable-133bsv .friendsRow-2yicud .discordTag-1Hozyw .username-1r0gCl {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: unset;
+	font-weight: unset;
+}

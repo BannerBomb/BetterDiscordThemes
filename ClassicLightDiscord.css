@@ -6891,7 +6891,7 @@ img[alt] {
 	overflow: hidden;
 	-webkit-box-flex: 1;
 	-ms-flex: 1 1 auto;
-	flex: 1 1 auto
+	flex: unset
 }
 
 .container-3baos1 {

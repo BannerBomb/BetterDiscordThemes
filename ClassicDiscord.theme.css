@@ -1,8 +1,8 @@
 /** 
  * @name ClassicDiscord
  * @author BannerBomb
- * @version 1.0
- * @description Replaces dicords theme back to it's original state before the update
+ * @version 1.1
+ * @description Replaces discords theme back to it's original state before the update
  * @source https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicDiscord.theme.css
  * @website https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicDiscord.theme.css
 */
@@ -57,8 +57,7 @@
 	--deprecated-text-input-border: rgba(0,0,0,0.3);
 	--deprecated-text-input-border-hover: #040405;
 	--deprecated-text-input-border-disabled: #202225;
-	--deprecated-text-input-prefix: #dcddde;
-	--default-color: #f6f6f7
+	--deprecated-text-input-prefix: #dcddde
 }
 
 /*.theme-light {
@@ -111,8 +110,7 @@
 	--deprecated-text-input-border: rgba(79,84,92,0.3);
 	--deprecated-text-input-border-hover: #b9bbbe;
 	--deprecated-text-input-border-disabled: #dcddde;
-	--deprecated-text-input-prefix: #b9bbbe;
-	--default-color: #4f545c
+	--deprecated-text-input-prefix: #b9bbbe
 }
 
 /* revert back to old light theme */
@@ -196,6 +194,14 @@
 .anchor-3Z-8Bb {
 	color: #00b0f4;
 	text-decoration: none
+}
+
+.theme-light .enabled-2cQ-u7:hover {
+	background-color: #ebedef
+}
+
+.theme-dark .enabled-2cQ-u7:hover {
+	background-color: #202225
 }
 
 .lookFilled-1Gx00P.colorLink-35jkBc {
@@ -550,6 +556,10 @@
 	background: #2f3136
 }
 
+.theme-light .lookBlank-3eh9lL {
+	color: currentColor;
+}
+
 .lookBlank-3eh9lL {
 	background: transparent;
 	/*color: currentColor;*/
@@ -595,6 +605,18 @@
 	overflow: hidden;
 	margin-top: 12px;
 	background-color: unset
+}
+
+.theme-dark .connectedAccount-36nQx7 {
+	border-color: #202225
+}
+
+.theme-light .connectedAccount-36nQx7 {
+	border-color: #dcddde
+}
+
+.theme-light .connectedAccountName-f8AEe2 {
+	color: #72767d
 }
 
 

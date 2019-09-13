@@ -1,12 +1,3 @@
-/** 
- * @name ClassicDiscord
- * @author BannerBomb
- * @version 1.1
- * @description Replaces discords theme back to it's original state before the update
- * @source https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicDiscord.theme.css
- * @website https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicDiscord.theme.css
-*/
-
 .theme-dark {
 	--header-primary: #fff;
 	--header-secondary: #b9bbbe;
@@ -29,6 +20,7 @@
 	--background-modifier-accent: hsla(0,0%,100%,0.06);
 	--elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
 	--elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+	--logo-primary: #fff;
 	--guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 	--channeltextarea-background: #40444b;
 	--activity-card-background: #202225;

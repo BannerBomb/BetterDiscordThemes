@@ -1430,21 +1430,6 @@
 	background: #f6f6f7 url(/assets/48072c077a73774c670f5752a21d2c5b.svg) no-repeat 155px 50%
 }
 
-.theme-light {
-	--foreground-1: #23262a;
-	--foreground-2: #2e3338;
-	--foreground-3: #4f5660;
-	--foreground-effect-1: #9099a4;
-	--foreground-effect-2: #747f8d;
-	--background-1: #fff;
-	--background-2: #f8f9f9;
-	--background-3: #e3e5e8;
-	--background-effect-1: #dbdee1;
-	--background-effect-2: #ebedef;
-	--muted-channels: #c7ccd1;
-	--dividers: #d2d6da
-}
-
 .theme-light .avatar-VxgULZ:before {
 	background-color: #747f8d
 }
@@ -2419,6 +2404,111 @@
 
 .theme-light .textArea-2Spzkt::placeholder {
 	color: #b9bbbe
+}
+
+.attachButton-1UjEWA {
+	padding: 10px
+}
+
+.attachButton-1UjEWA:hover .attachButtonPlus-rUdX-B {
+	-webkit-transform: scale3d(1.1, 1.1, 1.1);
+	transform: scale3d(1.1, 1.1, 1.1);
+	opacity: 1
+}
+
+.attachButtonInner-1iyZ9F {
+	height: 24px
+}
+
+.attachButtonPlus-rUdX-B {
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transition: opacity .1s ease, -webkit-transform .1s ease;
+	transition: opacity .1s ease, -webkit-transform .1s ease;
+	transition: opacity .1s ease, transform .1s ease;
+	transition: opacity .1s ease, transform .1s ease, -webkit-transform .1s ease;
+	width: 24px;
+	height: 24px;
+	opacity: .3
+}
+
+.attachButtonPlay-ZnFdQr {
+	color: #43b581
+}
+
+.attachButtonDivider-3Glu60 {
+	width: 1px;
+	height: 80%;
+	position: relative;
+	top: 10%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.uploadInput-2lNPSo {
+	position: relative;
+	width: 0;
+	height: 0;
+	pointer-events: none
+}
+
+.textArea-2Spzkt {
+	background-color: transparent;
+	resize: none;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-weight: 400;
+	font-size: 0.9375rem;
+	line-height: 1.25rem;
+	letter-spacing: -0.025rem;
+	max-height: 144px;
+	width: 100%;
+	min-height: 20px;
+	margin: 2px 2px 2px 0;
+	padding: 10px
+}
+
+.textArea-2Spzkt::-webkit-input-placeholder {
+	-webkit-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.textArea-2Spzkt::-moz-placeholder {
+	-moz-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.textArea-2Spzkt:-ms-input-placeholder {
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.textArea-2Spzkt::placeholder {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.textAreaEdit-bNLDk3, .textAreaEnabled-3vQ5WZ, .textAreaEnabledNoAttach-1WxUwj, .textAreaForm-18s4EO {
+}
+
+.textAreaDisabled-2_o-kZ {
+	pointer-events: none
 }
 
 .theme-light .attachButtonPlus-rUdX-B {

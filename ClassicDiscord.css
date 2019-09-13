@@ -1,3 +1,12 @@
+/** 
+ * @name ClassicDiscord
+ * @author BannerBomb
+ * @version 1.1
+ * @description Replaces discords theme back to it's original state before the update
+ * @source https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicDiscord.theme.css
+ * @website https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicDiscord.theme.css
+*/
+
 .theme-dark {
 	--header-primary: #fff;
 	--header-secondary: #b9bbbe;
@@ -45,7 +54,7 @@
 	--channels-default: #8e9297;
 	--interactive-normal: #b9bbbe;
 	--interactive-hover: #dcddde;
-	--interactive-active: #fff;
+	--interactive-active: #2e3338; /* #fff */
 	--interactive-muted: #4f545c;
 	--background-primary: #36393f;
 	--background-secondary: #2f3136;
@@ -560,7 +569,7 @@
 
 .lookBlank-3eh9lL {
 	background: transparent;
-	/*color: currentColor;*/
+	color: currentColor;
 	border: 0;
 	padding: 0;
 	margin: 0

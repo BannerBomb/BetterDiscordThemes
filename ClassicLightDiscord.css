@@ -9131,3 +9131,16 @@ svg[name="Nova_AddReaction"], svg[name="OverflowMenu"] {
 	flex: 1;
 	overflow: hidden
 }
+
+.theme-light #bd-settings-sidebar .ui-tab-bar-item {
+	color: #4f5660;
+}
+
+.theme-light #bd-settings-sidebar .ui-tab-bar-separator {
+	background-color: #d2d6da;
+}
+
+.theme-light #bd-settings-sidebar .ui-tab-bar-item.selected {
+	background-color: #d2d6da;
+	color: unset
+}

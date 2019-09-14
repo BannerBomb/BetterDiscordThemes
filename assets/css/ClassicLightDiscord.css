@@ -11224,8 +11224,24 @@ hr[aria-hidden="true"]:not(.dividerEnabled-2TTlcf) {
 	text-indent: 0
 }
 
+.dividerContent-2L12VI:after {
+	left: 100%;
+	margin-left: 8px
+}
+
 @media (-webkit-max-device-pixel-ratio: 1) {
 	.theme-light .markup-2BOw-j {
 		font-weight: 400
 	}
+}
+
+.username-_4ZSMR {
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 0;
+	cursor: pointer
+}
+
+.username-_4ZSMR:hover {
+	text-decoration: underline
 }

@@ -11130,3 +11130,96 @@ hr[aria-hidden="true"]:not(.dividerEnabled-2TTlcf) {
 
 .large-3Q-_XB {
 }
+
+.markup-2BOw-j {
+	font-size: 0.9375rem;
+	line-height: 1.3;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text
+}
+
+.markup-2BOw-j a {
+	unicode-bidi: bidi-override;
+	direction: ltr;
+	word-break: break-word;
+	-webkit-transition: .05s;
+	transition: .05s;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.markup-2BOw-j a:hover {
+	text-decoration: underline
+}
+
+.markup-2BOw-j strong {
+	font-weight: 700
+}
+
+.markup-2BOw-j em {
+	font-style: italic
+}
+
+.markup-2BOw-j pre {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 0;
+	font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+	font-size: 0.75rem;
+	margin-top: 6px;
+	max-width: 90%;
+	white-space: pre-wrap
+}
+
+.markup-2BOw-j blockquote {
+	margin: 8px 0;
+	max-width: 90%
+}
+
+.markup-2BOw-j blockquote pre {
+	max-width: 100%
+}
+
+.markup-2BOw-j code {
+	font-size: 0.875rem;
+	line-height: 1rem;
+	text-indent: 0
+}
+
+.markup-2BOw-j code.inline {
+	width: auto;
+	height: auto;
+	padding: .2em;
+	margin: -.2em 0;
+	border-radius: 3px;
+	font-size: 85%;
+	font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+	text-indent: 0;
+	border: none
+}
+
+.blockquoteContainer-U5TVEi {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6 {
+	margin: 8px 0;
+	width: 4px;
+	border-radius: 4px
+}
+
+.blockquoteContainer-U5TVEi blockquote {
+	padding: 0 8px 0 12px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-indent: 0
+}

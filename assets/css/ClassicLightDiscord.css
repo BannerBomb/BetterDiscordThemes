@@ -8900,69 +8900,6 @@ svg[name="Nova_AddReaction"], svg[name="OverflowMenu"] {
 	display: none
 }
 
-.markup-2BOw-j a {
-	unicode-bidi: bidi-override;
-	direction: ltr;
-	word-break: break-word;
-	-webkit-transition: .05s;
-	transition: .05s;
-	text-decoration: none;
-	cursor: pointer
-}
-
-.markup-2BOw-j a:hover {
-	text-decoration: underline
-}
-
-.markup-2BOw-j strong {
-	font-weight: 700
-}
-
-.markup-2BOw-j em {
-	font-style: italic
-}
-
-.markup-2BOw-j pre {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 5px;
-	padding: 0;
-	font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
-	font-size: 0.75rem;
-	margin-top: 6px;
-	max-width: 90%;
-	white-space: pre-wrap
-}
-
-.markup-2BOw-j blockquote {
-	margin: 8px 0;
-	max-width: 90%
-}
-
-.markup-2BOw-j blockquote pre {
-	max-width: 100%
-}
-
-.markup-2BOw-j code {
-	font-size: 0.875rem;
-	line-height: 1rem;
-	text-indent: 0
-}
-
-.markup-2BOw-j code.inline {
-	width: auto;
-	height: auto;
-	padding: .2em;
-	margin: -.2em 0;
-	border-radius: 3px;
-	font-size: 85%;
-	font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
-	text-indent: 0;
-	border: none
-}
-
 .typeCreate-1kfBMl:after {
 	background: url(/assets/9d5a0ed6004593447a865df0f7eb149e.svg)
 }

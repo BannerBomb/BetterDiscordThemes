@@ -521,10 +521,6 @@
 	background-color: #202225
 }
 
-.theme-dark .panels-j1Uci_, .theme-light .panels-j1Uci_ {
-	background-color: rgba(32, 34, 37, .3)
-}
-
 .activityPanel-28dQGo {
 	border-bottom: 1px solid #36393f
 }
@@ -11577,7 +11573,7 @@ svg[name="Nova_AddReaction"], svg[name="OverflowMenu"] {
 	-moz-user-select: text;
 	-ms-user-select: text;
 	user-select: text;
-	font-weight: unset
+	font-weight: 400
 }
 
 .markup-2BOw-j a {

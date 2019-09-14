@@ -1,12 +1,3 @@
-/** 
- * @name ClassicDiscord
- * @author BannerBomb
- * @version 1.1
- * @description Replaces discords theme back to it's original state before the update
- * @source https://github.com/BannerBomb/BetterDiscordThemes
- * @website https://github.com/BannerBomb/BetterDiscordThemes
-*/
-
 .theme-dark {
 	--header-primary: #fff;
 	--header-secondary: #b9bbbe;
@@ -14085,7 +14076,7 @@ img[alt] {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height: 100%;
+	/*height: 100%;*/
 	-webkit-box-flex: 1;
 	-ms-flex: 1 1 auto;
 	flex: 1 1 auto
@@ -15784,4 +15775,373 @@ img[alt] {
 	color: #72767d;
 	margin-bottom: 10px;
 	text-transform: uppercase
+}
+
+.platform-osx .wrapper-1Rf91z {
+	margin-top: 32px
+}
+
+.platform-win .scroller-2TZvBN {
+	padding-top: 4px
+}
+
+.platform-osx .scroller-2TZvBN {
+	padding-top: 0
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 {
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border: 2px solid #99aab5;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	border-radius: 3px;
+	margin-left: 15px;
+	font-smoothing: antialiased
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .iconWrap-1pnF3w {
+	position: relative;
+	-ms-flex-item-align: center;
+	align-self: center;
+	margin: 25px 0;
+	width: 100px;
+	height: 100px
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb {
+	-webkit-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+	background-repeat: no-repeat;
+	position: absolute;
+	-ms-flex-item-align: center;
+	align-self: center;
+	width: 100%;
+	height: 100%
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.active-iLSdWQ {
+	opacity: 0
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.apple-1fKN59 {
+	background-image: url(/assets/57568e1cfc37c81cf56db9498b4f128a.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.apple-1fKN59.active-iLSdWQ {
+	background-image: url(/assets/7ddab19e24325212299490c2f413b122.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.android-gGrHJu {
+	background-image: url(/assets/d73fd4014c02b360d9529a720ecb7c44.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.android-gGrHJu.active-iLSdWQ {
+	background-image: url(/assets/676bfec9f4343f6fcdf0a12ae313a3de.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.windows-29yOum {
+	background-image: url(/assets/d6221c5e88f5cb89f125868c077e9859.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.windows-29yOum.active-iLSdWQ {
+	background-image: url(/assets/37ce528f3abf4d735a624309e990acc6.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.linux-15cW1y {
+	background-image: url(/assets/a3bee2061afed80c5bd76ff38cd18f0e.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.linux-15cW1y.active-iLSdWQ {
+	background-image: url(/assets/f8e3f6e7b2cf5f10aed43243560a1b91.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.ios-Z7K-rr {
+	background-image: url(/assets/0c460e9b848f5c4cc964ae9c62c0f9b9.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.ios-Z7K-rr.active-iLSdWQ {
+	background-image: url(/assets/00a1b0447f0474ecaa767a4bc09fe2ed.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236:first-child {
+	margin-left: 0
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 p {
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 5px 0;
+	text-align: center;
+	font-weight: 500;
+	color: #99aab5
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .downloadButtons-3H1BTc {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .downloadButtons-3H1BTc.list-3wJ7Rg {
+	padding: 0 20px
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .downloadButtons-3H1BTc.list-3wJ7Rg .downloadButton-1bWXpg {
+	margin: 20px 5px;
+	width: 65px
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .downloadButton-1bWXpg {
+	-webkit-transition: background-color .3s ease-in-out;
+	transition: background-color .3s ease-in-out;
+	background-color: #99aab5;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 3px;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 12px 0;
+	color: #fff;
+	width: 150px;
+	margin: 20px
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ {
+	-webkit-transform: scale(1.025);
+	transform: scale(1.025);
+	border-color: #7289da
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ .icon-2Pk7pb {
+	opacity: 0
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ .icon-2Pk7pb.active-iLSdWQ {
+	opacity: 1
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ p {
+	color: #7289da
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ .downloadButton-1bWXpg {
+	background-color: #7289da
+}
+
+.platform-linux {
+	-webkit-transform: scaleX(1.0000001);
+	transform: scaleX(1.0000001)
+}
+
+.platform-osx .container-1r6BKw {
+	-webkit-app-region: drag
+}
+
+.platform-3suY7a {
+	opacity: 1;
+	-webkit-transition: opacity .4s ease;
+	transition: opacity .4s ease
+}
+
+.platform-win .standardSidebarView-3F1I7i {
+	top: 22px
+}
+
+.platform-osx .standardSidebarView-3F1I7i:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 22px;
+	z-index: 10;
+	-webkit-app-region: drag
+}
+
+.platform-osx .pageHeaderDrag-OPlmbm {
+	-webkit-app-region: drag
+}
+
+.platform-osx .notice-2FJMB4 {
+	-webkit-app-region: drag
+}
+
+.platform-web .notice-2FJMB4 {
+	border-radius: 0
+}
+
+.platform-win .base-3dtUhz {
+	border-radius: 8px 0 0 8px
+}
+
+.platform-linux .channels-Ie2l6A {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0)
+}
+
+.platform-win .layer-3QrUeG {
+	top: -22px;
+	padding-top: 22px
+}
+
+.platform-win .container-16j22k {
+	padding-top: 22px;
+	top: -22px
+}
+
+.platform-osx .splashBackground-1FRCko:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 32px;
+	z-index: 1;
+	-webkit-app-region: drag
+}
+
+.platform-win .splashBackground-1FRCko:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 84px;
+	height: 22px;
+	background: rgba(0, 0, 0, .3);
+	border-bottom-left-radius: 3px;
+	z-index: 1;
+	-webkit-transition: background .4s ease .4s;
+	transition: background .4s ease .4s
+}
+
+.platform-win .theme-dark .splashBackground-1FRCko.loggingIn-3Hi-BU:before, .platform-win .theme-light .splashBackground-1FRCko.loggingIn-3Hi-BU:before {
+	background: transparent
+}
+
+hr[aria-hidden="true"]:not(.dividerEnabled-2TTlcf) {
+	visibility: hidden;
+}
+
+.whitney-hA8VUm {
+	font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.code-2OPlX5 {
+	font-family: SourceCodePro, Consolas, Liberation Mono, Menlo, Courier, monospace
+}
+
+.weightLight-3heiur {
+	font-weight: 300
+}
+
+.weightNormal-WI4TcG {
+	font-weight: 400
+}
+
+.weightMedium-2iZe9B {
+	font-weight: 500
+}
+
+.weightSemiBold-NJexzi {
+	font-weight: 600
+}
+
+.weightBold-2yjlgw {
+	font-weight: 700
+}
+
+.size10-39i14u {
+	font-size: 10px
+}
+
+.size12-3R0845 {
+	font-size: 12px
+}
+
+.size14-3iUx6q {
+	font-size: 14px
+}
+
+.size16-14cGz5 {
+	font-size: 16px
+}
+
+.size18-3EXdSj {
+	font-size: 18px
+}
+
+.size20-2QkeeC {
+	font-size: 20px
+}
+
+.size22-3iBPR6 {
+	font-size: 22px
+}
+
+.size24-1ONE4K {
+	font-size: 24px
+}
+
+.size26-3MdnUv {
+	font-size: 26px
+}
+
+.size36-3O_2zN {
+	font-size: 36px
+}
+
+.height12-2Ltw-k {
+	line-height: 12px
+}
+
+.height14-RAZbc0 {
+	line-height: 14px
+}
+
+.height16-2Lv3qA {
+	line-height: 16px
+}
+
+.height20-mO2eIN {
+	line-height: 20px
+}
+
+.height24-3XzeJx {
+	line-height: 24px
+}
+
+.height28-3tox65 {
+	line-height: 28px
+}
+
+.height30-yt7xZf {
+	line-height: 30px
+}
+
+.height36-36OHCc {
+	line-height: 36px
+}
+
+.height44-GQFvfT {
+	line-height: 44px
+}
+
+.small-29zrCQ {
+}
+
+.medium-zmzTW- {
+}
+
+.large-3Q-_XB {
 }

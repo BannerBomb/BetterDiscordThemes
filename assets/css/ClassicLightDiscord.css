@@ -11245,3 +11245,19 @@ hr[aria-hidden="true"]:not(.dividerEnabled-2TTlcf) {
 .username-_4ZSMR:hover {
 	text-decoration: underline
 }
+
+.emojiPicker-3m1S-j {
+	overflow: hidden;
+	background-color: #fff;
+	border: 1px solid hsla(0, 0%, 74.9%, .2);
+	-webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
+	border-radius: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column
+}

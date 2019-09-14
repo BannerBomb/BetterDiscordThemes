@@ -10077,3 +10077,24 @@ svg[name="Nova_AddReaction"], svg[name="OverflowMenu"] {
 .platform-win .theme-dark .splashBackground-1FRCko.loggingIn-3Hi-BU:before, .platform-win .theme-light .splashBackground-1FRCko.loggingIn-3Hi-BU:before {
 	background: transparent
 }
+
+hr[aria-hidden="true"]:not(.dividerEnabled-2TTlcf) {
+	visibility: hidden;
+}
+
+.wrapper-1Rf91z {
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/*width: 72px;*/
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	position: relative;
+	contain: layout;
+	border-radius: 5px 0 0 5px
+}

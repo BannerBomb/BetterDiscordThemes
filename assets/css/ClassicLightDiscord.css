@@ -11223,3 +11223,9 @@ hr[aria-hidden="true"]:not(.dividerEnabled-2TTlcf) {
 	box-sizing: border-box;
 	text-indent: 0
 }
+
+@media (-webkit-max-device-pixel-ratio: 1) {
+	.theme-light .markup-2BOw-j {
+		/*font-weight:500*/
+	}
+}

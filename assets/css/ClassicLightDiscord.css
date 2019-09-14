@@ -4518,7 +4518,8 @@
 	height: 1px;
 	-webkit-box-flex: 1;
 	-ms-flex: 1 1 auto;
-	flex: 1 1 auto
+	flex: 1 1 auto;
+	background-color: #eceeef;
 }
 
 .dividerContent-2L12VI:before {

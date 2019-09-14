@@ -1,3 +1,12 @@
+/** 
+ * @name ClassicDiscord
+ * @author BannerBomb
+ * @version 1.1
+ * @description Replaces discords theme back to it's original state before the update
+ * @source https://github.com/BannerBomb/BetterDiscordThemes
+ * @website https://github.com/BannerBomb/BetterDiscordThemes
+*/
+
 .theme-dark {
 	--header-primary: #fff;
 	--header-secondary: #b9bbbe;
@@ -15072,4 +15081,707 @@ img[alt] {
 	pointer-events: auto;
 	-ms-flex-direction: column;
 	flex-direction: column
+}
+
+.lfgBadge-1wmy7_ {
+	padding: 0 5px;
+	background-color: #40444b;
+	color: #8e9297
+}
+
+.containerDefault-1ZnADq.selected-37j_iU .lfgBadge-1wmy7_, .iconVisibility-1bOqu7:hover .lfgBadge-1wmy7_ {
+	background-color: #8e9297;
+	color: #fff
+}
+
+.container-35XQWE {
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	padding: 8px;
+	height: 24px;
+	pointer-events: none
+}
+
+.bar-30k2ka {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #fff;
+	height: 24px;
+	cursor: pointer;
+	text-transform: uppercase;
+	border-radius: 12px;
+	pointer-events: auto;
+	-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .24);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .24);
+	-webkit-app-region: no-drag
+}
+
+.scroller-2wx7Hm {
+	z-index: 1
+}
+
+.unread-1s3J68 {
+	left: 0;
+	right: 0
+}
+
+.unreadBar-3YD_k9:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -8px;
+	right: -8px;
+	bottom: 0
+}
+
+.unreadBottom-3hWQ7c {
+	bottom: 0
+}
+
+.unreadBottom-3hWQ7c .unreadBar-3YD_k9:before {
+	bottom: -8px
+}
+
+.positionedContainer-l-ZqRq {
+	position: relative
+}
+
+.unreadTop-73gZ2_ {
+	top: 0
+}
+
+.unreadTop-73gZ2_ .unreadBar-3YD_k9:before {
+	top: -8px
+}
+
+.menu-Sp6bN1 {
+	border-radius: 5px;
+	overflow: hidden;
+	width: 216px
+}
+
+.unread-1xRYoj {
+	background-color: rgba(114, 118, 125, .9)
+}
+
+.unread-1xRYoj:hover {
+	background-color: #72767d
+}
+
+.unread-1xRYoj:active {
+	background-color: #676a71
+}
+
+.mention-1f5kbO {
+	background-color: rgba(240, 71, 71, .9)
+}
+
+.mention-1f5kbO:hover {
+	background-color: #f04747
+}
+
+.mention-1f5kbO:active {
+	background-color: #d84040
+}
+
+.menu-Sp6bN1 {
+	border-radius: 5px;
+	overflow: hidden;
+	width: 216px
+}
+
+.item-1GzJrl {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 10px 14px;
+	cursor: pointer;
+	margin: 0;
+	font-size: 15px;
+	line-height: 18px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.item-1GzJrl, .separator-2zcjq8 {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.separator-2zcjq8 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid
+}
+
+.icon-2doZ3q {
+	width: 18px;
+	height: 18px;
+	background-position: 50%;
+	background-repeat: no-reapeat;
+	opacity: .8;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	margin-right: 14px
+}
+
+.label-1Y-LW5 {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.status-3Kz6VS {
+	margin-right: 14px
+}
+
+.alt-3btY0e .item-1GzJrl {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start
+}
+
+.alt-3btY0e .item-1GzJrl .statusIconText-3b4TkH {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.alt-3btY0e .item-1GzJrl .helper-2c73HK {
+	margin: 4px 0 0 24px;
+	font-size: 11px;
+	line-height: 12px;
+	white-space: normal
+}
+
+.alt-3btY0e .item-1GzJrl:last-child .helper-2c73HK {
+	margin-bottom: 6px
+}
+
+.theme-light .menu-Sp6bN1 {
+	background: #fff;
+	-webkit-box-shadow: 0 2px 10 0 rgba(0, 0, 0, .5);
+	box-shadow: 0 2px 10 0 rgba(0, 0, 0, .5)
+}
+
+.theme-light .item-1GzJrl {
+	color: #99aab5
+}
+
+.theme-light .item-1GzJrl:hover {
+	background-color: #f9f9f9;
+	opacity: 1;
+	color: #737f8d
+}
+
+.theme-light .item-1GzJrl:hover .icon-2doZ3q {
+	opacity: 1
+}
+
+.theme-light .item-1GzJrl:hover.invite-271nFU {
+	color: #677bc4
+}
+
+.theme-light .item-1GzJrl.invite-271nFU {
+	color: #7289da
+}
+
+.theme-light .item-1GzJrl.leave-1DRJfn {
+	color: #f04747
+}
+
+.theme-light .separator-2zcjq8 {
+	border-bottom-color: #f5f5f5
+}
+
+.theme-light .alt-3btY0e .helper-2c73HK {
+	color: rgba(153, 170, 181, .8)
+}
+
+.theme-dark .menu-Sp6bN1 {
+	background: #282b30;
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1)
+}
+
+.theme-dark .item-1GzJrl {
+	color: hsla(0, 0%, 100%, .6)
+}
+
+.theme-dark .item-1GzJrl:hover {
+	background-color: #25282d;
+	color: #fff
+}
+
+.theme-dark .item-1GzJrl:hover .icon-2doZ3q {
+	opacity: 1
+}
+
+.theme-dark .item-1GzJrl:hover.invite-271nFU {
+	color: #677bc4
+}
+
+.theme-dark .item-1GzJrl.invite-271nFU {
+	color: #7289da
+}
+
+.theme-dark .item-1GzJrl.leave-1DRJfn {
+	color: #f04747
+}
+
+.theme-dark .separator-2zcjq8 {
+	border-bottom-color: hsla(0, 0%, 96.1%, .08)
+}
+
+.theme-dark .alt-3btY0e .helper-2c73HK {
+	color: rgba(153, 170, 181, .8)
+}
+
+.premiumGuildIcon-BhwtRn {
+	width: 16px;
+	height: 16px;
+	margin-right: 16px
+}
+
+.hotspot-1E-7dC {
+	margin-left: 11px
+}
+
+.theme-dark .premiumGuildIcon-BhwtRn, .theme-light .premiumGuildIcon-BhwtRn {
+	color: #ff73fa
+}
+
+.button-1w5pas {
+	opacity: .6;
+	-webkit-transform: translate3d(0, 3px, 0);
+	transform: translate3d(0, 3px, 0);
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	margin-left: 4px
+}
+
+.button-1w5pas.open-1Te94t {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg)
+}
+
+.button-1w5pas.open-1Te94t path {
+	stroke-dasharray: 14
+}
+
+.button-1w5pas path {
+	stroke-width: 2px;
+	stroke-dasharray: 7;
+	stroke-dashoffset: 1;
+	-webkit-transition: stroke-dasharray .2s ease;
+	transition: stroke-dasharray .2s ease
+}
+
+.container-2Rl01u {
+	position: relative
+}
+
+.bannerImage-1jOskm {
+	height: 135px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover
+}
+
+.bannerImage-1jOskm, .bannerImage-1jOskm:after {
+	position: absolute;
+	width: 240px;
+	top: 0
+}
+
+.bannerImage-1jOskm:after {
+	content: "";
+	-webkit-filter: blur(20px);
+	filter: blur(20px);
+	background-color: rgba(47, 49, 54, .4);
+	left: 0;
+	height: 48px
+}
+
+.hasDropdown-2invhV.container-2Rl01u, .hasDropdown-2invhV .header-2o-2hj {
+	cursor: pointer
+}
+
+.hasDropdown-2invhV .header-2o-2hj:hover {
+	background-color: rgba(0, 0, 0, .1)
+}
+
+.modal-DRZfgq {
+	width: 520px;
+	border-radius: 5px;
+	position: relative;
+	background-color: #fff;
+	overflow: hidden;
+	-webkit-box-shadow: 0 0 0 1px rgba(185, 187, 190, .3), 0 2px 10px 0 rgba(0, 0, 0, .1);
+	box-shadow: 0 0 0 1px rgba(185, 187, 190, .3), 0 2px 10px 0 rgba(0, 0, 0, .1)
+}
+
+.container-1nPf-D {
+	margin: 32px 40px
+}
+
+.title-3Fa4Po {
+	color: #7289da;
+	text-transform: uppercase
+}
+
+.description-vvVtO_ {
+	margin-left: 40px;
+	margin-right: 40px
+}
+
+.link-1q2Osy {
+}
+
+.ack-2yIUvY {
+	color: #4f545c
+}
+
+.buttonContainer-3S_miP {
+	background-color: #f9f9f9;
+	padding-right: 30px
+}
+
+.button-1TiC1S {
+}
+
+.root-SR8cQa {
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+	width: 600px
+}
+
+.topSectionStreaming-1Tpf5X {
+	background: #593695
+}
+
+.topSectionSpotify-1lI0-P {
+	background: #1db954
+}
+
+.topSectionXbox-3fWLjS {
+	background: #107c10
+}
+
+.topSectionPlaying-1J5E4n {
+	background: #7289da
+}
+
+.topSectionPlaying-1J5E4n .profileBadgePartner-SjK6L2 {
+	background-image: url(/assets/a0e288a458c48dfcf548dadc277e42e6.svg)
+}
+
+.header-QKLPzZ {
+	padding: 20px
+}
+
+.headerInfo-30uryT {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	min-width: 0;
+	padding-right: 16px
+}
+
+.nameTag-2IFDfL {
+	white-space: normal;
+	word-break: break-word;
+	line-height: 20px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex-1O1GKY;
+	margin-right: 20px
+}
+
+.customStatus-154i-H {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 100%;
+	display: inline-block
+}
+
+.botTag-ymWxY6 {
+	position: relative;
+	bottom: 1px
+}
+
+.avatar-3EQepX {
+	margin-right: 20px
+}
+
+.username-3gJmXY {
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff
+}
+
+.nameTag-2IFDfL .botTag-ymWxY6, .nameTag-2IFDfL .discriminator-xUhQkU, .nameTag-2IFDfL .username-3gJmXY {
+	white-space: normal;
+	display: inline
+}
+
+.discriminator-xUhQkU {
+	font-size: 14px;
+	color: hsla(0, 0%, 100%, .6)
+}
+
+.profileBadges-2vWUYb {
+	margin-top: 8px
+}
+
+.profileBadgeWrapper-rl_RO6 {
+	margin-right: 6px
+}
+
+.profileBadge-2BqF-Z {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50%;
+	cursor: pointer;
+	width: 24px;
+	height: 24px
+}
+
+.profileBadgeStaff-13GO7z {
+	background-image: url(/assets/7cfd90c8062139e4804a1fa59f564731.svg)
+}
+
+.profileBadgePartner-SjK6L2 {
+	background-image: url(/assets/a0e288a458c48dfcf548dadc277e42e6.svg)
+}
+
+.profileBadgeHypesquad-1YIe7Z {
+	background-image: url(/assets/3a050fcc884255231b99b7033c776070.svg)
+}
+
+.profileBadgeHypeSquadOnlineHouse1-xN6tES {
+	background-image: url(/assets/1115767aed344e96a27a12e97718c171.svg)
+}
+
+.profileBadgeHypeSquadOnlineHouse2-3jBpXR {
+	background-image: url(/assets/d3478c6bd5cee0fc600e55935ddc81aa.svg)
+}
+
+.profileBadgeHypeSquadOnlineHouse3-1YbjMX {
+	background-image: url(/assets/2a085ed9c86f3613935a6a8667ba8b89.svg)
+}
+
+.profileBadgeHypeSquadOnlineHouse1Winner-3OGyO6 {
+	background-image: url(/assets/75f75c3142b8d44ea7052c2bcb9a9043.svg)
+}
+
+.profileBadgeHypeSquadOnlineHouse2Winner-3GW5Sm {
+	background-image: url(/assets/d4a8fe68fc5f40c8a778f858881a7b84.svg)
+}
+
+.profileBadgeHypeSquadOnlineHouse3Winner-2iVu11 {
+	background-image: url(/assets/5dc48a7859a00e7d95ad8382156aab84.svg)
+}
+
+.profileBadgeEarlySupporter-PQB_0a {
+	background-image: url(/assets/ce15562552e3d70c56d5408cfeed2ffd.svg);
+	width: 28px
+}
+
+.profileBadgePremium-3kZ9Qj {
+	background-image: url(/assets/379d2b3171722ef8be494231234da5d1.svg);
+	width: 28px
+}
+
+.profileBadgeBugHunter-IV0vLE {
+	background-image: url(/assets/df26f079738a4dcd07cbce6eb3c957f1.svg)
+}
+
+.profileGuildSubscriberlvl1-pKd1EZ {
+	background-image: url(/assets/24e49184598820f274e62293349a2e43.svg)
+}
+
+.profileGuildSubscriberlvl2-1aIFve {
+	background-image: url(/assets/cc73fba5c2e9b70752bbd1db35a1b9c3.svg)
+}
+
+.profileGuildSubscriberlvl3-33AROf {
+	background-image: url(/assets/a4c3939a9b03274246df9b144fcd86cf.svg)
+}
+
+.profileGuildSubscriberlvl4-2yY8EG {
+	background-image: url(/assets/d01bee8a9b41bd9dda26a43221b2e7e8.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeStaff-13GO7z {
+	background-image: url(/assets/4358ad1fb423b346324516453750f569.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgePartner-SjK6L2 {
+	background-image: url(/assets/33fedf082addb91d88abc272b4b18daa.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypesquad-1YIe7Z {
+	background-image: url(/assets/6c73f47daf179ffade99f501bfc5101b.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse1-xN6tES {
+	background-image: url(/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse2-3jBpXR {
+	background-image: url(/assets/48cf0556d93901c8cb16317be2436523.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse3-1YbjMX {
+	background-image: url(/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse1Winner-3OGyO6 {
+	background-image: url(/assets/26a2dc8c9d70955a988cb377eec84c22.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse2Winner-3GW5Sm {
+	background-image: url(/assets/88d4f11bee9ea34fee59973b33353da0.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse3Winner-2iVu11 {
+	background-image: url(/assets/3245b2cd85b787b195ea8f6e10ef5790.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeEarlySupporter-PQB_0a {
+	background-image: url(/assets/23e59d799436a73c024819f84ea0b627.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgePremium-3kZ9Qj {
+	background-image: url(/assets/386884eecd36164487505ddfbac35a9d.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeBugHunter-IV0vLE {
+	background-image: url(/assets/f61b8981e92feead854f52e5a1ba14f0.svg)
+}
+
+.topSectionNormal-2-vo2m .profileGuildSubscriberlvl1-pKd1EZ {
+	background-image: url(/assets/7dc50a46914f03a1c6698133199ad39c.svg)
+}
+
+.topSectionNormal-2-vo2m .profileGuildSubscriberlvl2-1aIFve {
+	background-image: url(/assets/dc286bc95cdbd592bb7e60ee40941be2.svg)
+}
+
+.topSectionNormal-2-vo2m .profileGuildSubscriberlvl3-33AROf {
+	background-image: url(/assets/307d418c2462234eee59151dca9b92e8.svg)
+}
+
+.topSectionNormal-2-vo2m .profileGuildSubscriberlvl4-2yY8EG {
+	background-image: url(/assets/ac20c019c11f36fb22b4ce13725a1aff.svg)
+}
+
+.actionButton-3W1xZa {
+	min-height: 32px
+}
+
+.actionRightButton-2vQaa9 {
+	margin-left: 10px
+}
+
+.buttonInvertedPurple-WtBglX {
+	background-color: #f8f9fd;
+	color: #593695
+}
+
+.buttonInvertedPurple-WtBglX:active {
+	background-color: #e3e7f8
+}
+
+.headerFill-adLl4x {
+	background-color: rgba(0, 0, 0, .05)
+}
+
+.additionalActionsIcon-1FoUlE {
+	background: url(/assets/c75b049cb25ec007efd22d608a0c9c0a.svg) no-repeat 50%;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	margin-left: 8px
+}
+
+.tabBarContainer-1s1u-z {
+	border-top: 1px solid hsla(0, 0%, 100%, .1);
+	padding-left: 20px
+}
+
+.tabBar-2MuP6- {
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	height: 55px
+}
+
+.tabBar-2MuP6-, .tabBarItem-1b8RUP {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex-1O1GKY
+}
+
+.tabBarItem-1b8RUP {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-bottom: 2px solid transparent;
+	font-size: 13px;
+	margin-right: 40px;
+	font-size: 14px
+}
+
+.activity-1ythUs {
+	padding: 20px
+}
+
+.body-3ND3kc {
+	height: 240px
+}
+
+.listScroller-2_vlfo {
+	padding: 20px 0
+}
+
+.userInfoSection-2acyCx {
+	margin: 0 20px;
+	padding: 20px 0
+}
+
+.userInfoSection-2acyCx+.userInfoSection-2acyCx {
+	border-top: 1px solid
+}
+
+.userInfoSectionHeader-CBvMDh {
+	font-weight: 700;
+	font-size: 12px;
+	color: #72767d;
+	margin-bottom: 10px;
+	text-transform: uppercase
 }

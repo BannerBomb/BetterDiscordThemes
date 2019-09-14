@@ -50,6 +50,11 @@
 	--dividers: #d2d6da
 }
 
+.noScroll-41HX24 {
+	overflow: visible;
+	padding: 0 20px
+}
+
 .themeLight-Hp2h58 {
 	background-color: #f6f6f7;
 	color: #4f545c
@@ -9660,4 +9665,415 @@ svg[name="Nova_AddReaction"], svg[name="OverflowMenu"] {
 
 .clickable-1JJAn8.container-2Pjhx-:active, .selected-aXhQR6.container-2Pjhx- {
 	color: #fff;
+}
+
+.streamPreviewWrapper-2DSWOK {
+	padding-left: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 25ms ease .15s, left 25ms ease-in 125ms;
+	transition: opacity 25ms ease .15s, left 25ms ease-in 125ms;
+	position: relative;
+	left: 7px
+}
+
+.streamPreviewWrapper-2DSWOK.mounted-26niXS {
+	opacity: 1;
+	left: 0
+}
+
+.streamPreview-2-WUWT {
+	width: 252px;
+	border-radius: 5px;
+	overflow: hidden
+}
+
+.previewContainer-12UlHl {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 142px;
+	position: relative
+}
+
+.previewContainer-12UlHl:hover .previewHover-1tGzfF {
+	opacity: 1
+}
+
+.previewHover-1tGzfF {
+	-webkit-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	cursor: pointer;
+	line-height: 18px;
+	font-weight: 600
+}
+
+.previewImage-RxVzkZ {
+	width: 100%;
+	height: 100%
+}
+
+.applicationName-31eLkz {
+	position: absolute;
+	top: 8px;
+	left: 12px;
+	font-size: 14px;
+	line-height: 18px
+}
+
+.watchButton-2SbJEo {
+	margin-top: 12px;
+	margin-bottom: 8px;
+	border: 1px solid transparent;
+	width: 90%
+}
+
+.watchButtonInner-2padQK {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.liveIcon-1hht8V {
+	margin-right: 8px
+}
+
+.protip-3-1FNm {
+	text-align: center;
+	margin-top: 10px
+}
+
+.white-WjN64k {
+	color: #fff
+}
+
+.name-3YKhmS, .tierTooltipTitle-1EIbL_ {
+	/*font-weight: 500*/
+}
+
+.name-3YKhmS {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 500;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.tierTooltipTitle-1EIbL_ {
+	font-weight: 600
+}
+
+.header-2o-2hj {
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+	padding: 0 16px;
+	height: 48px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	z-index: 3;
+	-webkit-transition: background-color .15s ease;
+	transition: background-color .15s ease;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .2), 0 1.5px 0 rgba(0, 0, 0, .05), 0 2px 0 rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .2), 0 1.5px 0 rgba(0, 0, 0, .05), 0 2px 0 rgba(0, 0, 0, .05)
+}
+
+.header-2o-2hj .dropdown-33sEFX {
+	-webkit-transition: all .15s ease;
+	transition: all .15s ease
+}
+
+.header-2o-2hj.withBanner-3j8ruM {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	cursor: pointer
+}
+
+.header-2o-2hj.withBanner-3j8ruM .dropdown-33sEFX {
+	opacity: 1;
+	-webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .4));
+	filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .4))
+}
+
+.header-2o-2hj.withBanner-3j8ruM .name-3YKhmS {
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .4)
+}
+
+.platform-osx .wrapper-1Rf91z {
+	margin-top: 32px
+}
+
+.platform-win .scroller-2TZvBN {
+	padding-top: 4px
+}
+
+.platform-osx .scroller-2TZvBN {
+	padding-top: 0
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 {
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border: 2px solid #99aab5;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	border-radius: 3px;
+	margin-left: 15px;
+	font-smoothing: antialiased
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .iconWrap-1pnF3w {
+	position: relative;
+	-ms-flex-item-align: center;
+	align-self: center;
+	margin: 25px 0;
+	width: 100px;
+	height: 100px
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb {
+	-webkit-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+	background-repeat: no-repeat;
+	position: absolute;
+	-ms-flex-item-align: center;
+	align-self: center;
+	width: 100%;
+	height: 100%
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.active-iLSdWQ {
+	opacity: 0
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.apple-1fKN59 {
+	background-image: url(/assets/57568e1cfc37c81cf56db9498b4f128a.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.apple-1fKN59.active-iLSdWQ {
+	background-image: url(/assets/7ddab19e24325212299490c2f413b122.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.android-gGrHJu {
+	background-image: url(/assets/d73fd4014c02b360d9529a720ecb7c44.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.android-gGrHJu.active-iLSdWQ {
+	background-image: url(/assets/676bfec9f4343f6fcdf0a12ae313a3de.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.windows-29yOum {
+	background-image: url(/assets/d6221c5e88f5cb89f125868c077e9859.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.windows-29yOum.active-iLSdWQ {
+	background-image: url(/assets/37ce528f3abf4d735a624309e990acc6.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.linux-15cW1y {
+	background-image: url(/assets/a3bee2061afed80c5bd76ff38cd18f0e.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.linux-15cW1y.active-iLSdWQ {
+	background-image: url(/assets/f8e3f6e7b2cf5f10aed43243560a1b91.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.ios-Z7K-rr {
+	background-image: url(/assets/0c460e9b848f5c4cc964ae9c62c0f9b9.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .icon-2Pk7pb.ios-Z7K-rr.active-iLSdWQ {
+	background-image: url(/assets/00a1b0447f0474ecaa767a4bc09fe2ed.svg)
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236:first-child {
+	margin-left: 0
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 p {
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 5px 0;
+	text-align: center;
+	font-weight: 500;
+	color: #99aab5
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .downloadButtons-3H1BTc {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .downloadButtons-3H1BTc.list-3wJ7Rg {
+	padding: 0 20px
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .downloadButtons-3H1BTc.list-3wJ7Rg .downloadButton-1bWXpg {
+	margin: 20px 5px;
+	width: 65px
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 .downloadButton-1bWXpg {
+	-webkit-transition: background-color .3s ease-in-out;
+	transition: background-color .3s ease-in-out;
+	background-color: #99aab5;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 3px;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 12px 0;
+	color: #fff;
+	width: 150px;
+	margin: 20px
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ {
+	-webkit-transform: scale(1.025);
+	transform: scale(1.025);
+	border-color: #7289da
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ .icon-2Pk7pb {
+	opacity: 0
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ .icon-2Pk7pb.active-iLSdWQ {
+	opacity: 1
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ p {
+	color: #7289da
+}
+
+.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236.active-iLSdWQ .downloadButton-1bWXpg {
+	background-color: #7289da
+}
+
+.platform-linux {
+	-webkit-transform: scaleX(1.0000001);
+	transform: scaleX(1.0000001)
+}
+
+.platform-osx .container-1r6BKw {
+	-webkit-app-region: drag
+}
+
+.platform-3suY7a {
+	opacity: 1;
+	-webkit-transition: opacity .4s ease;
+	transition: opacity .4s ease
+}
+
+.platform-win .standardSidebarView-3F1I7i {
+	top: 22px
+}
+
+.platform-osx .standardSidebarView-3F1I7i:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 22px;
+	z-index: 10;
+	-webkit-app-region: drag
+}
+
+.platform-osx .pageHeaderDrag-OPlmbm {
+	-webkit-app-region: drag
+}
+
+.platform-osx .notice-2FJMB4 {
+	-webkit-app-region: drag
+}
+
+.platform-web .notice-2FJMB4 {
+	border-radius: 0
+}
+
+.platform-win .base-3dtUhz {
+	border-radius: 8px 0 0 8px
+}
+
+.platform-linux .channels-Ie2l6A {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0)
+}
+
+.platform-win .layer-3QrUeG {
+	top: -22px;
+	padding-top: 22px
+}
+
+.platform-win .container-16j22k {
+	padding-top: 22px;
+	top: -22px
+}
+
+.platform-osx .splashBackground-1FRCko:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 32px;
+	z-index: 1;
+	-webkit-app-region: drag
+}
+
+.platform-win .splashBackground-1FRCko:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 84px;
+	height: 22px;
+	background: rgba(0, 0, 0, .3);
+	border-bottom-left-radius: 3px;
+	z-index: 1;
+	-webkit-transition: background .4s ease .4s;
+	transition: background .4s ease .4s
+}
+
+.platform-win .theme-dark .splashBackground-1FRCko.loggingIn-3Hi-BU:before, .platform-win .theme-light .splashBackground-1FRCko.loggingIn-3Hi-BU:before {
+	background: transparent
 }

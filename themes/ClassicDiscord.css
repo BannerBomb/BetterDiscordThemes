@@ -1,3 +1,12 @@
+/** 
+ * @name ClassicDiscord
+ * @author BannerBomb
+ * @version 1.1
+ * @description Replaces discords theme back to it's original state before the update
+ * @source https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicDiscord.theme.css
+ * @website https://github.com/BannerBomb/BetterDiscordThemes/raw/master/ClassicDiscord.theme.css
+*/
+
 .theme-dark {
 	--header-primary: #fff;
 	--header-secondary: #b9bbbe;

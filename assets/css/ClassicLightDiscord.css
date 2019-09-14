@@ -4485,6 +4485,75 @@
 	color: #f04747
 }
 
+.divider-3gKybi {
+	cursor: default;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center
+}
+
+.divider-3gKybi.dividerRed-MKoLlr {
+	text-transform: uppercase
+}
+
+.divider-3gKybi+.divider-3gKybi {
+	display: none
+}
+
+.dividerContent-2L12VI {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	line-height: 19px;
+	font-weight: 500;
+	font-size: 14px
+}
+
+.dividerContent-2L12VI:after, .dividerContent-2L12VI:before {
+	content: "";
+	border-bottom: 1px solid;
+	height: 1px;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto
+}
+
+.dividerContent-2L12VI:before {
+	right: 100%;
+	margin-right: 8px
+}
+
+.dividerContent-2L12VI:after {
+	left: 100%;
+	margin-left: 8px
+}
+
+.messageGroupBlocked-3wrQQX {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border: 1px solid;
+	border-radius: 3px;
+	margin: 6px 6px 6px 19px
+}
+
+.messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh- {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 9px 0;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 0
+}
+
+.messageGroupBlocked-3wrQQX:last-child {
+	margin-bottom: 12px
+}
+
 .theme-light .divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI:after, .theme-light .divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI:before {
 	background-color: currentColor;
 	/*opacity: .2*/
@@ -10076,10 +10145,6 @@ svg[name="Nova_AddReaction"], svg[name="OverflowMenu"] {
 
 .platform-win .theme-dark .splashBackground-1FRCko.loggingIn-3Hi-BU:before, .platform-win .theme-light .splashBackground-1FRCko.loggingIn-3Hi-BU:before {
 	background: transparent
-}
-
-hr[aria-hidden="true"]:not(.dividerEnabled-2TTlcf) {
-	visibility: hidden;
 }
 
 .wrapper-1Rf91z {

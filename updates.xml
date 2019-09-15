@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
+  <app appid='cgkjmjoahmmhidniejilekodndcobogn'>
+    <updatecheck codebase='https://bannerbomb-extensions.github.io/extensions/github_fix.crx' version='1.4.2.0' />
+  </app>
+</gupdate>
+<!-- version='' -->

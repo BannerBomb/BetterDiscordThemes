@@ -2,9 +2,9 @@
  * @name ClassicDiscord
  * @author BannerBomb
  * @version ersion auto updating
- * @description Bring's back discord's old dark mode theme. Including context menu, text, fonts and icons.
+ * @description Fully brings back discord's old Dark and Light modes. Thanks to Ownsin#0001 for spotting the bugs.
  * @source https://github.com/BannerBomb/BetterDiscordThemes
  * @website https://github.com/BannerBomb/BetterDiscordThemes
 */
 
-@import url(https://raw.githack.com/BannerBomb/BetterDiscordThemes/master/assets/css/ClassicDiscord.css);
+@import url(https://betterdiscordaddons.000webhostapp.com/loadtheme?theme=ClassicDiscord.css);

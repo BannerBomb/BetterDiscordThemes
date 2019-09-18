@@ -61626,12 +61626,13 @@ a.clickable-1JJAn8:hover .layout-2DM8Md {
 	/*font-weight: 400;*/
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	overflow: hidden;
+	overflow: hidden
 }
 
 /* Conflicting addons */
 #MemberCount {
-	background: unset !important
+	background: unset !important;
+	position: unset !important
 }
 
 .popout-2iWAc- > #bda-qem ~ .emojiPicker-3m1S-j {

@@ -1,4 +1,4 @@
-//META{"name":"ClassicDiscord","website":"https://github.com/BannerBomb/BetterDiscordThemes","source":"https://betterdiscordaddons.000webhostapp.com/loadtheme?theme=ClassicDiscord.css"}*//
+//META{"name":"ClassicDiscord","website":"https://github.com/BannerBomb/BetterDiscordThemes","source":"https://raw.githubusercontent.com/BannerBomb/BetterDiscordThemes/master/plugins/ClassicDiscord.plugin.js"}*//
 
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }

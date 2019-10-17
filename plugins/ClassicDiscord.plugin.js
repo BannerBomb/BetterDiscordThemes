@@ -9,7 +9,7 @@ class ClassicDiscord {
 
 	getDescription() { return "Fully brings back discord's old Dark and Light modes. Thanks to Ownsin#0001 for helping spot the bugs."; }
 	
-	getRawUrl() { return "https://raw.githubusercontent.com/BannerBomb/BetterDiscordThemes/master/plugins/ClassicDiscord.plugin.js"; }
+	getRawUrl() { return "https://betterdiscordaddons.000webhostapp.com/loadplugin?plugin=ClassicDiscord.plugin.js"; }
 
 	constructor() {
 		this.changelog = {

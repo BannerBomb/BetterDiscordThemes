@@ -8,6 +8,8 @@ class ClassicDiscord {
 	getAuthor() { return "BannerBomb"; }
 
 	getDescription() { return "Fully brings back discord's old Dark and Light modes. Thanks to Ownsin#0001 for helping spot the bugs."; }
+	
+	getRawUrl() { return `https://raw.githubusercontent.com/BannerBomb/BetterDiscordThemes/master/plugins/ClassicDiscord.plugin.js?${new Array(Math.ceil(20 / 13)).fill(Math.random().toString(16).substring(2, 15)).reduce((string, func) => string + func, '').substring(0, 20)}`; }
 
 	constructor() {
 		this.changelog = {

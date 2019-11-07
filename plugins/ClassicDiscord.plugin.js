@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.0.2"; } 
+	getVersion() { return "1.0.3"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -121,8 +121,8 @@ class ClassicDiscord {
 		if (global.BDFDB && typeof BDFDB === "object" && BDFDB.loaded) {
 			var classicDiscordStylesheet = document.getElementById('ClassicDiscord');
 			if (classicDiscordStylesheet) classicDiscordStylesheet.remove();
-			var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
-			var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="4"]`);
+			var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
+			var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
 			var gear_icon = document.querySelector('button[aria-label="User Settings"]');
 			var crown_icon = document.querySelector('svg[name="Crown"]');
 			if (gift_icon) gift_icon.innerHTML = this.icons.newIcons.gift;
@@ -141,8 +141,8 @@ class ClassicDiscord {
 		if (instance.props && instance.props.type && instance.props.type == "normal" && !instance.props.disabled) {
 			let textarea = wrapper.querySelector("textarea");
 			if (textarea) {
-				var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
-				var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="4"]`);
+				var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
+				var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
 				if (gift_icon) gift_icon.innerHTML = this.icons.oldIcons.gift;
 				if (gif_icon) gif_icon.innerHTML = this.icons.oldIcons.gif;
 			}

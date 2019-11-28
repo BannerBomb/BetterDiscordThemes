@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.0.3"; } 
+	getVersion() { return "1.0.4"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -13,7 +13,8 @@ class ClassicDiscord {
 
 	constructor() {
 		this.changelog = {
-			"fixed":[["Initial release"]]
+			//"fixed":[["Jump to","Pressing the Jump to button now properly works again"]],
+			"improved":[["Added BetterDiscord's darkMode setting since it was removed from better discord. This can be enabled in the plugins settings."]]
 		};
 
 		this.labels = {};
@@ -45,6 +46,27 @@ class ClassicDiscord {
 				crown: `<svg aria-label="Server Owner" name="Crown" class="${BDFDB.disCNS.memberownericon}" aria-hidden="false" width="24" height="24" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.6572 5.42868C13.8879 5.29002 14.1806 5.30402 14.3973 5.46468C14.6133 5.62602 14.7119 5.90068 14.6473 6.16202L13.3139 11.4954C13.2393 11.7927 12.9726 12.0007 12.6666 12.0007H3.33325C3.02725 12.0007 2.76058 11.792 2.68592 11.4954L1.35258 6.16202C1.28792 5.90068 1.38658 5.62602 1.60258 5.46468C1.81992 5.30468 2.11192 5.29068 2.34325 5.42868L5.13192 7.10202L7.44592 3.63068C7.46173 3.60697 7.48377 3.5913 7.50588 3.57559C7.5192 3.56612 7.53255 3.55663 7.54458 3.54535L6.90258 2.90268C6.77325 2.77335 6.77325 2.56068 6.90258 2.43135L7.76458 1.56935C7.89392 1.44002 8.10658 1.44002 8.23592 1.56935L9.09792 2.43135C9.22725 2.56068 9.22725 2.77335 9.09792 2.90268L8.45592 3.54535C8.46794 3.55686 8.48154 3.56651 8.49516 3.57618C8.51703 3.5917 8.53897 3.60727 8.55458 3.63068L10.8686 7.10202L13.6572 5.42868ZM2.66667 12.6673H13.3333V14.0007H2.66667V12.6673Z" fill="currentColor"></path></svg>`,
 			}
 		}
+		
+		this.defaults = {
+			settings: {
+				darkMode:	{value:false, 	description:"Make certain elements dark by default."},
+			}
+		};
+	}
+	
+	getSettingsPanel () {
+		if (!global.BDFDB || typeof BDFDB != "object" || !BDFDB.loaded || !this.started) return;
+		let settings = BDFDB.DataUtils.get(this, "settings");
+		var settingshtml = `<div class="${this.name}-settings BDFDB-settings"><div class="${BDFDB.disCNS.titledefault + BDFDB.disCNS.titlesize18 + BDFDB.disCNS.height24 + BDFDB.disCNS.weightnormal + BDFDB.disCN.marginbottom8}">${this.name}</div><div class="BDFDB-settings-inner">`;
+		for (let key in settings) {
+			settingshtml += `<div class="${BDFDB.disCNS.flex + BDFDB.disCNS.horizontal + BDFDB.disCNS.justifystart + BDFDB.disCNS.aligncenter + BDFDB.disCNS.nowrap + BDFDB.disCN.marginbottom8}" style="flex: 1 1 auto;"><h3 class="${BDFDB.disCNS.titledefault + BDFDB.disCNS.marginreset + BDFDB.disCNS.weightmedium + BDFDB.disCNS.titlesize16 + BDFDB.disCNS.height24 + BDFDB.disCN.flexchild}" style="flex: 1 1 auto;">${this.defaults.settings[key].description}</h3><div class="${BDFDB.disCNS.flexchild + BDFDB.disCNS.switchenabled + BDFDB.disCNS.switch + BDFDB.disCNS.switchvalue + BDFDB.disCNS.switchsizedefault + BDFDB.disCNS.switchsize + BDFDB.disCN.switchthemedefault}" style="flex: 0 0 auto;"><input type="checkbox" value="settings ${key}" class="${BDFDB.disCNS.switchinnerenabled + BDFDB.disCN.switchinner} settings-switch"${settings[key] ? " checked" : ""}></div></div>`;
+		}
+		settingshtml += `</div></div>`;
+
+		let settingspanel = BDFDB.DOMUtils.create(settingshtml);
+
+		BDFDB.initElements(settingspanel, this);
+		return settingspanel;
 	}
 
 	//legacy
@@ -86,6 +108,12 @@ class ClassicDiscord {
 		if (global.BDFDB && typeof BDFDB === "object" && BDFDB.loaded) {
 			if (this.started) return;
 			BDFDB.loadMessage(this);
+			
+			const settings = BDFDB.DataUtils.get(this, "settings");
+			if (settings.darkMode) {
+				var bda_dark = document.getElementById('app-mount');
+				if (!bda_dark.classList.contains('bda-dark')) bda_dark.classList.add('bda-dark');
+			}
 
 			var classicDiscordStylesheet = document.getElementById('ClassicDiscord');
 			if (classicDiscordStylesheet) classicDiscordStylesheet.remove();
@@ -116,9 +144,18 @@ class ClassicDiscord {
 			console.error(`%c[${this.getName()}]%c`, 'color: #3a71c1; font-weight: 700;', '', 'Fatal Error: Could not load BD functions!');
 		}
 	}
+	
+	onSettingsClosed (e) {
+		if (this.SettingsUpdated) {
+			delete this.SettingsUpdated;
+			BDFDB.ModuleUtils.forceAllUpdates(this);
+		}
+	}
 
 	stop() {
 		if (global.BDFDB && typeof BDFDB === "object" && BDFDB.loaded) {
+			var bda_dark = document.getElementById('app-mount');
+			if (bda_dark.classList.contains('bda-dark')) bda_dark.classList.remove('bda-dark');
 			var classicDiscordStylesheet = document.getElementById('ClassicDiscord');
 			if (classicDiscordStylesheet) classicDiscordStylesheet.remove();
 			var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);

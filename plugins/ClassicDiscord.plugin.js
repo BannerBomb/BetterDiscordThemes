@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.0.4"; } 
+	getVersion() { return "1.0.5"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -14,7 +14,7 @@ class ClassicDiscord {
 	constructor() {
 		this.changelog = {
 			//"fixed":[["Jump to","Pressing the Jump to button now properly works again"]],
-			"improved":[["Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings."]]
+			"improved":[["Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings. You must reload discord after toggling."]]
 		};
 
 		this.labels = {};
@@ -57,16 +57,16 @@ class ClassicDiscord {
 	getSettingsPanel () {
 		if (!global.BDFDB || typeof BDFDB != "object" || !BDFDB.loaded || !this.started) return;
 		let settings = BDFDB.DataUtils.get(this, "settings");
-		var settingshtml = `<div class="${this.name}-settings BDFDB-settings"><div class="${BDFDB.disCNS.titledefault + BDFDB.disCNS.titlesize18 + BDFDB.disCNS.height24 + BDFDB.disCNS.weightnormal + BDFDB.disCN.marginbottom8}">${this.name}</div><div class="BDFDB-settings-inner">`;
-		for (let key in settings) {
-			settingshtml += `<div class="${BDFDB.disCNS.flex + BDFDB.disCNS.horizontal + BDFDB.disCNS.justifystart + BDFDB.disCNS.aligncenter + BDFDB.disCNS.nowrap + BDFDB.disCN.marginbottom8}" style="flex: 1 1 auto;"><h3 class="${BDFDB.disCNS.titledefault + BDFDB.disCNS.marginreset + BDFDB.disCNS.weightmedium + BDFDB.disCNS.titlesize16 + BDFDB.disCNS.height24 + BDFDB.disCN.flexchild}" style="flex: 1 1 auto;">${this.defaults.settings[key].description}</h3><div class="${BDFDB.disCNS.flexchild + BDFDB.disCNS.switchenabled + BDFDB.disCNS.switch + BDFDB.disCNS.switchvalue + BDFDB.disCNS.switchsizedefault + BDFDB.disCNS.switchsize + BDFDB.disCN.switchthemedefault}" style="flex: 0 0 auto;"><input type="checkbox" value="settings ${key}" class="${BDFDB.disCNS.switchinnerenabled + BDFDB.disCN.switchinner} settings-switch"${settings[key] ? " checked" : ""}></div></div>`;
-		}
-		settingshtml += `</div></div>`;
-
-		let settingspanel = BDFDB.DOMUtils.create(settingshtml);
-
-		BDFDB.initElements(settingspanel, this);
-		return settingspanel;
+		let settingsitems = [], inneritems = [];
+		for (let key in settings) settingsitems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsSaveItem, {
+			className: BDFDB.disCN.marginbottom8,
+			type: "Switch",
+			plugin: this,
+			keys: ["settings", key],
+			label: this.defaults.settings[key].description,
+			value: settings[key]
+		}));
+		return BDFDB.PluginUtils.createSettingsPanel(this, settingsitems);
 	}
 
 	//legacy
@@ -108,7 +108,7 @@ class ClassicDiscord {
 		if (global.BDFDB && typeof BDFDB === "object" && BDFDB.loaded) {
 			if (this.started) return;
 			BDFDB.loadMessage(this);
-			
+
 			const settings = BDFDB.DataUtils.get(this, "settings");
 			if (settings.darkMode) {
 				var bda_dark = document.getElementById('app-mount');

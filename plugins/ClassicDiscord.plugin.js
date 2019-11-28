@@ -14,7 +14,7 @@ class ClassicDiscord {
 	constructor() {
 		this.changelog = {
 			//"fixed":[["Jump to","Pressing the Jump to button now properly works again"]],
-			"improved":[["Added BetterDiscord's darkMode setting since it was removed from better discord. This can be enabled in the plugins settings."]]
+			"improved":[["Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings."]]
 		};
 
 		this.labels = {};

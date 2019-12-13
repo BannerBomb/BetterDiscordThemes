@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.0.5"; } 
+	getVersion() { return "1.0.6"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -13,21 +13,41 @@ class ClassicDiscord {
 
 	constructor() {
 		this.changelog = {
-			//"fixed":[["Jump to","Pressing the Jump to button now properly works again"]],
+			"fixed":[["Textarea Icons","Icons now render again this takes effect when switching to a seperate channel after enabling this plguin."]],
 			"improved":[["Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings. You must reload discord after toggling."]]
 		};
+		/*
+		added: "New Features",
+		fixed: "Bug Fixes",
+		improved: "Improvements",
+		progress: "Progress"
+		*/
 
 		this.labels = {};
+		
+		/*this.patchedModules = {
+			before: {
+				ChannelTextArea: "render",
+				MemberListItem: "render",
+				StandardSidebarView: "render",
+				MessageContent: "render",
+				Message: "render"
+			},
+			after: {
+				ChannelTextArea: "render",
+				MemberListItem: "render",
+				MessageContent: "render",
+				StandardSidebarView: "render",
+				Message: "render"
+			}
+		};*/
 
 		this.patchModules = {
 			"MemberListItem":"componentDidMount",
 			"ChannelTextArea": "componentDidMount",
 			"Message": "componentDidMount",
 			"MessageContent": "componentDidMount",
-			"StandardSidebarView": "componentWillUnmount"//["componentDidMount", "componentWillUnmount"],
-			/*"HeaderBar": ["componentDidMount", "componentDidUpdate"],
-			"HeaderBarContainer": ["componentDidMount", "componentDidUpdate"],
-			"AuthWrapper": ["componentDidMount", "componentWillUnmount"]*/
+			"StandardSidebarView": "componentWillUnmount"
 		};
 	}
 

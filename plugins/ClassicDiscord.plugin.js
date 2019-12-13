@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.0.6"; } 
+	getVersion() { return "1.0.7"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -196,7 +196,7 @@ class ClassicDiscord {
 
 	processChannelTextArea(instance, wrapper, returnvalue) {
 		if (instance.props && instance.props.type && instance.props.type == "normal" && !instance.props.disabled) {
-			let textarea = wrapper.querySelector("textarea");
+			let textarea = wrapper.querySelector(BDFDB.dotCN.textareaenabled);
 			if (textarea) {
 				var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
 				var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);

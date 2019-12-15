@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.0.7"; } 
+	getVersion() { return "1.0.8"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -13,8 +13,8 @@ class ClassicDiscord {
 
 	constructor() {
 		this.changelog = {
-			"fixed":[["Textarea Icons","Icons now render again this takes effect when switching to a seperate channel after enabling this plguin."]],
-			"improved":[["Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings. You must reload discord after toggling."]]
+			"fixed":[["Textarea", "Fixed a bug that caused text to overflow within a textbox."], ["Textarea Icons","Icons now render again this takes effect when switching to a seperate channel after enabling this plguin."]],
+			"improved":[["BBD Darkmode", "Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings. You must reload discord after toggling."]]
 		};
 		/*
 		added: "New Features",
@@ -69,7 +69,10 @@ class ClassicDiscord {
 		
 		this.defaults = {
 			settings: {
-				darkMode:	{value:false, 	description:"Make certain elements dark by default."},
+				darkMode: {
+					value: false,
+					description: "Make certain elements dark by default."
+				}
 			}
 		};
 	}
@@ -146,7 +149,17 @@ class ClassicDiscord {
 					document.head.appendChild(classicDiscordStylesheet);
 				}
 			});
-			
+			var classicDiscordStylesheet_Overrid = document.getElementById('ClassicDiscord_Override');
+			if (classicDiscordStylesheet_Overrid) classicDiscordStylesheet_Overrid.remove();
+			var is_rich_textbox = document.querySelector('.slateContainer-3rqVBl');
+			if (is_rich_textbox) {
+				var classicDiscordStylesheet_Override = document.createElement("style");
+				classicDiscordStylesheet_Override.setAttribute("id", "ClassicDiscord_Override");
+				classicDiscordStylesheet_Override.setAttribute("type", "text/css");
+				classicDiscordStylesheet_Override.innerText = ".scrollableContainer-38zsVD { overflow-x: hidden !important; overflow-y: scroll !important; max-height: 144px !important; border-radius: 8px !important; scrollbar-width: none !important }";
+				document.head.appendChild(classicDiscordStylesheet_Override);
+			}
+
 			/*if (!document.getElementById('windowstopbar')) {
 				var topbar = document.createElement('div');
 				topbar.setAttribute('class', 'typeWindows-1za-n7 withFrame-haYltI titleBar-AC4pGV horizontalReverse-3tRjY7 flex-1O1GKY directionRowReverse-m8IjIq justifyStart-2NDFzi alignStretch-DpGPf3');
@@ -177,7 +190,9 @@ class ClassicDiscord {
 			var bda_dark = document.getElementById('app-mount');
 			if (bda_dark.classList.contains('bda-dark')) bda_dark.classList.remove('bda-dark');
 			var classicDiscordStylesheet = document.getElementById('ClassicDiscord');
+			var classicDiscordStylesheet_Override = document.getElementById('ClassicDiscord_Override');
 			if (classicDiscordStylesheet) classicDiscordStylesheet.remove();
+			if (classicDiscordStylesheet_Override) classicDiscordStylesheet_Override.remove();
 			var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
 			var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
 			var gear_icon = document.querySelector('button[aria-label="User Settings"]');

@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.0.8"; } 
+	getVersion() { return "1.0.9"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -13,7 +13,7 @@ class ClassicDiscord {
 
 	constructor() {
 		this.changelog = {
-			"fixed":[["Textarea", "Fixed a bug that caused text to overflow within a textbox."], ["Textarea Icons","Icons now render again this takes effect when switching to a seperate channel after enabling this plguin."]],
+			"fixed":[["Textarea", "Fixed a bug that caused text to overflow within a textbox."], ["Textarea Icons","Icons now render again this takes effect when switching to a seperate channel after enabling this plguin."], ["Size", "Reduced the size of the parsed CSS"]],
 			"improved":[["BBD Darkmode", "Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings. You must reload discord after toggling."]]
 		};
 		/*
@@ -145,7 +145,7 @@ class ClassicDiscord {
 					classicDiscordStylesheet = document.createElement("style");
 					classicDiscordStylesheet.setAttribute("id", "ClassicDiscord");
 					classicDiscordStylesheet.setAttribute("type", "text/css");
-					classicDiscordStylesheet.innerText = body;
+					classicDiscordStylesheet.innerHTML = body;
 					document.head.appendChild(classicDiscordStylesheet);
 				}
 			});
@@ -156,7 +156,7 @@ class ClassicDiscord {
 				var classicDiscordStylesheet_Override = document.createElement("style");
 				classicDiscordStylesheet_Override.setAttribute("id", "ClassicDiscord_Override");
 				classicDiscordStylesheet_Override.setAttribute("type", "text/css");
-				classicDiscordStylesheet_Override.innerText = ".scrollableContainer-38zsVD { overflow-x: hidden !important; overflow-y: scroll !important; max-height: 144px !important; border-radius: 8px !important; scrollbar-width: none !important }";
+				classicDiscordStylesheet_Override.innerHTML = ".scrollableContainer-38zsVD { overflow-x: hidden !important; overflow-y: scroll !important; max-height: 144px !important; border-radius: 8px !important; scrollbar-width: none !important }";
 				document.head.appendChild(classicDiscordStylesheet_Override);
 			}
 

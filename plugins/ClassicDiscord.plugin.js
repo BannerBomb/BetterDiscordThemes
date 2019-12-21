@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.1.0"; } 
+	getVersion() { return "1.1.1"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -14,8 +14,7 @@ class ClassicDiscord {
 	constructor() {
 		this.changelog = {
 			"fixed": [
-				["Textarea", "Fixed a bug that caused text to overflow within a textbox."],
-				["Textarea Icons","Icons now render again this takes effect when switching to a seperate channel after enabling this plguin."],
+				["Textarea Icons","Button rendering is fixed once again."],
 				["Size", "Reduced the size of the parsed CSS."]
 			],
 			"improved": [
@@ -170,7 +169,7 @@ class ClassicDiscord {
 				var classicDiscordStylesheet_Override = document.createElement("style");
 				classicDiscordStylesheet_Override.setAttribute("id", "ClassicDiscord_Override");
 				classicDiscordStylesheet_Override.setAttribute("type", "text/css");
-				classicDiscordStylesheet_Override.innerHTML = ".scrollableContainer-38zsVD { overflow-x: hidden !important; overflow-y: scroll !important; max-height: 144px !important; border-radius: 8px !important; scrollbar-width: none !important }";
+				classicDiscordStylesheet_Override.innerHTML = `${BDFDB.dotCN.textareascrollablecontainer} { overflow-x: hidden !important; overflow-y: scroll !important; max-height: 144px !important; border-radius: 8px !important; scrollbar-width: none !important }`;
 				document.head.appendChild(classicDiscordStylesheet_Override);
 			}
 
@@ -225,13 +224,13 @@ class ClassicDiscord {
 
 	processChannelTextArea(instance, wrapper, returnvalue) {
 		if (instance.props && instance.props.type && instance.props.type == "normal" && !instance.props.disabled) {
-			let textarea = wrapper.querySelector(BDFDB.dotCN.textareaenabled);
-			if (textarea) {
+			//let textarea = wrapper.querySelector(BDFDB.dotCN.textarea);
+			//if (textarea) {
 				var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
 				var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
 				if (gift_icon) gift_icon.innerHTML = this.icons.oldIcons.gift;
 				if (gif_icon) gif_icon.innerHTML = this.icons.oldIcons.gif;
-			}
+			//}
 		}
 	}
 

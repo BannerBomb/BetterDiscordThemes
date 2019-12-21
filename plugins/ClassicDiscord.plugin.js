@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.0.9"; } 
+	getVersion() { return "1.1.0"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -13,8 +13,14 @@ class ClassicDiscord {
 
 	constructor() {
 		this.changelog = {
-			"fixed":[["Textarea", "Fixed a bug that caused text to overflow within a textbox."], ["Textarea Icons","Icons now render again this takes effect when switching to a seperate channel after enabling this plguin."], ["Size", "Reduced the size of the parsed CSS"]],
-			"improved":[["BBD Darkmode", "Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings. You must reload discord after toggling."]]
+			"fixed": [
+				["Textarea", "Fixed a bug that caused text to overflow within a textbox."],
+				["Textarea Icons","Icons now render again this takes effect when switching to a seperate channel after enabling this plguin."],
+				["Size", "Reduced the size of the parsed CSS."]
+			],
+			"improved": [
+				["BBD Darkmode", "Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings. You must reload discord after toggling."]
+			]
 		};
 		/*
 		added: "New Features",
@@ -73,6 +79,10 @@ class ClassicDiscord {
 					value: false,
 					description: "Make certain elements dark by default."
 				}
+				/*useRichTextBox: {
+					value: false,
+					description: "Preview emojis, mentions, and markdown syntax as you type."
+				}*/
 			}
 		};
 	}
@@ -137,6 +147,10 @@ class ClassicDiscord {
 				var bda_dark = document.getElementById('app-mount');
 				if (!bda_dark.classList.contains('bda-dark')) bda_dark.classList.add('bda-dark');
 			}
+			
+			/*if (settings.useRichTextBox) {
+				BDFDB.LibraryModules.SettingsUtils.updateLocalSettings({ useRichChatTextBox: settings.useRichTextBox })
+			}*/
 
 			var classicDiscordStylesheet = document.getElementById('ClassicDiscord');
 			if (classicDiscordStylesheet) classicDiscordStylesheet.remove();
@@ -151,7 +165,7 @@ class ClassicDiscord {
 			});
 			var classicDiscordStylesheet_Overrid = document.getElementById('ClassicDiscord_Override');
 			if (classicDiscordStylesheet_Overrid) classicDiscordStylesheet_Overrid.remove();
-			var is_rich_textbox = document.querySelector('.slateContainer-3rqVBl');
+			var is_rich_textbox = document.querySelector('.slateContainer-3Qkn2x');//BDFDB.disCN.textareaslatecontainer);
 			if (is_rich_textbox) {
 				var classicDiscordStylesheet_Override = document.createElement("style");
 				classicDiscordStylesheet_Override.setAttribute("id", "ClassicDiscord_Override");

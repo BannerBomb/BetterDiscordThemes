@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.1.4"; } 
+	getVersion() { return "1.1.5"; } 
 
 	getAuthor() { return "BannerBomb"; }
 

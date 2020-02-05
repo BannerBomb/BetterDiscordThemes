@@ -1,9 +1,9 @@
 //META{"name":"ClassicDiscord","website":"https://github.com/BannerBomb/BetterDiscordThemes","source":"https://raw.githubusercontent.com/BannerBomb/BetterDiscordThemes/master/plugins/ClassicDiscord.plugin.js"}*//
 
 class ClassicDiscord {
-	getName() { return "ClassicDiscord"; }
+	getName() { return "ClassicDiscord (EOL)"; }
 
-	getVersion() { return "1.1.3"; } 
+	getVersion() { return "1.1.4"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -13,12 +13,8 @@ class ClassicDiscord {
 
 	constructor() {
 		this.changelog = {
-			"fixed": [
-				["Textarea Icons Again","Button rendering is fixed once again."],
-				["Size", "Reduced the size of the parsed CSS."]
-			],
 			"improved": [
-				["BBD Darkmode", "Added BetterDiscord's darkMode setting since it was removed from BetterDiscord. This can be enabled in the plugins settings. You must reload discord after toggling."]
+				["EOL","ClassicDiscord which was started by BannerBomb on September 14th 2019, has officially reached it's EOL state on February 3rd 2020. Sorry guys, but discord has changed way too much rendering this theme mostly unfixable."]
 			]
 		};
 		/*

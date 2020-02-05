@@ -1,7 +1,7 @@
 //META{"name":"ClassicDiscord","website":"https://github.com/BannerBomb/BetterDiscordThemes","source":"https://raw.githubusercontent.com/BannerBomb/BetterDiscordThemes/master/plugins/ClassicDiscord.plugin.js"}*//
 
 class ClassicDiscord {
-	getName() { return "ClassicDiscord (EOL)"; }
+	getName() { return "ClassicDiscord"; }
 
 	getVersion() { return "1.1.4"; } 
 

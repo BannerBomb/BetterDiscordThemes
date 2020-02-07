@@ -3,7 +3,7 @@
 class ClassicDiscord {
 	getName() { return "ClassicDiscord"; }
 
-	getVersion() { return "1.1.5"; } 
+	getVersion() { return "1.1.6"; } 
 
 	getAuthor() { return "BannerBomb"; }
 
@@ -14,7 +14,7 @@ class ClassicDiscord {
 	constructor() {
 		this.changelog = {
 			"improved": [
-				["EOL","ClassicDiscord which was started by BannerBomb on September 14th 2019, has officially reached it's EOL state on February 3rd 2020. Sorry guys, but discord has changed way too much rendering this theme mostly unfixable."]
+				["Revived","This theme has been revived as much as possible on Feburary 7th 2020, by BannerBomb :)"]
 			]
 		};
 		/*

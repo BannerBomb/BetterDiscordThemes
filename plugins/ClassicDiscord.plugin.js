@@ -25,23 +25,6 @@ class ClassicDiscord {
 		*/
 
 		this.labels = {};
-		
-		/*this.patchedModules = {
-			before: {
-				ChannelTextArea: "render",
-				MemberListItem: "render",
-				StandardSidebarView: "render",
-				MessageContent: "render",
-				Message: "render"
-			},
-			after: {
-				ChannelTextArea: "render",
-				MemberListItem: "render",
-				MessageContent: "render",
-				StandardSidebarView: "render",
-				Message: "render"
-			}
-		};*/
 
 		this.patchModules = {
 			"MemberListItem":"componentDidMount",
@@ -207,28 +190,14 @@ class ClassicDiscord {
 		}
 	}
 
-	// begin of own functions
-
 	processChannelEditorContainer(instance, wrapper, returnvalue) {
 		if (instance.props && instance.props.type && instance.props.type == "normal" && !instance.props.disabled) {
-			//let textarea = wrapper.querySelector(BDFDB.dotCN.textarea);
-			//if (textarea) {
-				var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
-				var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
-				if (gift_icon) gift_icon.innerHTML = this.icons.oldIcons.gift;
-				if (gif_icon) gif_icon.innerHTML = this.icons.oldIcons.gif;
-			//}
+			var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
+			var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
+			if (gift_icon) gift_icon.innerHTML = this.icons.oldIcons.gift;
+			if (gif_icon) gif_icon.innerHTML = this.icons.oldIcons.gif;
 		}
 	}
-	
-	/*processChannelTextAreaContainer (e) {
-		//console.log(e); // [3].props.editorRef.current.props
-		let [children, index] = BDFDB.ReactUtils.findChildren(e.returnvalue, {name: "ChannelEditorContainer"});
-		if (index > -1 && children[index].props.type == BDFDB.DiscordConstants.TextareaTypes.NORMAL && !children[index].props.disabled) {
-			let [children2, index2] = BDFDB.ReactUtils.findChildren(e.returnvalue, {props:[["className", BDFDB.disCN.textareapickerbuttons]]});
-			if (index2 > -1 && children2[index2].props && children2[index2].props.children) console.log(children2[index2].props.children)//children2[index2].props.children.unshift(this.createTranslateButton());
-		}
-	}*/
 
 	processMemberListItem(instance, wrapper, returnvalue) {
 		if (instance.props) {

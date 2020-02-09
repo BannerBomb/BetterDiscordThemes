@@ -177,11 +177,11 @@ class ClassicDiscord {
 			var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
 			var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
 			var gear_icon = document.querySelector('button[aria-label="User Settings"]');
-			var crown_icon = document.querySelector('svg[name="Crown"]');
+			//var crown_icon = document.querySelector('svg[name="Crown"]');
 			if (gift_icon) gift_icon.innerHTML = this.icons.newIcons.gift;
 			if (gif_icon) gif_icon.innerHTML = this.icons.newIcons.gif;
 			if (gear_icon) gear_icon.innerHTML = this.icons.newIcons.gear;
-			if (crown_icon) crown_icon.outerHTML = this.icons.newIcons.crown;
+			//if (crown_icon) crown_icon.outerHTML = this.icons.newIcons.crown;
 			this.started = false;
 			BDFDB.unloadMessage(this);
 		}

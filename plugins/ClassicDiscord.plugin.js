@@ -27,11 +27,8 @@ class ClassicDiscord {
 		this.labels = {};
 
 		this.patchModules = {
-			"MemberListItem":"componentDidMount",
-			"ChannelEditorContainer": "componentDidMount",
-			"Message": "componentDidMount",
-			"MessageContent": "componentDidMount",
-			"StandardSidebarView": "componentWillUnmount"
+			//"MemberListItem":"componentDidMount",
+			"ChannelEditorContainer": "componentDidMount"
 		};
 	}
 
@@ -126,7 +123,7 @@ class ClassicDiscord {
 				var bda_dark = document.getElementById('app-mount');
 				if (!bda_dark.classList.contains('bda-dark')) bda_dark.classList.add('bda-dark');
 			}
-			
+
 			/*if (settings.useRichTextBox) {
 				BDFDB.LibraryModules.SettingsUtils.updateLocalSettings({ useRichChatTextBox: settings.useRichTextBox })
 			}*/
@@ -192,17 +189,17 @@ class ClassicDiscord {
 
 	processChannelEditorContainer(instance, wrapper, returnvalue) {
 		if (instance.props && instance.props.type && instance.props.type == "normal" && !instance.props.disabled) {
-			var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
-			var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
+			var gift_icon = wrapper.parentElement.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
+			var gif_icon = wrapper.parentElement.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
 			if (gift_icon) gift_icon.innerHTML = this.icons.oldIcons.gift;
 			if (gif_icon) gif_icon.innerHTML = this.icons.oldIcons.gif;
 		}
 	}
 
-	processMemberListItem(instance, wrapper, returnvalue) {
+	/*processMemberListItem(instance, wrapper, returnvalue) {
 		if (instance.props) {
 			var crown_icon = document.querySelector('svg[name="Crown"]');
 			if (crown_icon) crown_icon.outerHTML = this.icons.oldIcons.crown;
 		}
-	}
+	}*/
 }

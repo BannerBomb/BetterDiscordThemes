@@ -185,6 +185,9 @@ var ClassicDiscord = (_ => {
 				if (gift_icon) gift_icon.innerHTML = this.icons.oldIcons.gift;
 				if (gif_icon) gif_icon.innerHTML = this.icons.oldIcons.gif;
 			}
+			// I know I shouldn't do this
+			var gear_icon = document.querySelector('button[aria-label="User Settings"]');
+			if (gear_icon && gear_icon.innerHTML !== this.icons.oldIcons.gear) gear_icon.innerHTML = this.icons.oldIcons.gear;
 		}
 
 		forceUpdateAll() {

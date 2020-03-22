@@ -1,3 +1,12 @@
+/** 
+ * @name FixCopySelectorButton
+ * @author BannerBomb
+ * @version 1.0.0
+ * @description Fixes the copy selectors button.
+ * @source https://github.com/BannerBomb/BetterDiscordThemes
+ * @website https://github.com/BannerBomb/BetterDiscordThemes
+*/
+
 .theme-dark .item-1Yvehc {
 	color: hsla(0, 0%, 100%, .6)
 }

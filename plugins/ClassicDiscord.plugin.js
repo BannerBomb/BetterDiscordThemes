@@ -3,7 +3,7 @@ var ClassicDiscord = (_ => {
 	return class ClassicDiscord {
 		getName() { return "ClassicDiscord"; }
 
-		getVersion() { return "1.1.7"; } 
+		getVersion() { return "1.1.8"; } 
 
 		getAuthor() { return "BannerBomb"; }
 
@@ -179,11 +179,16 @@ var ClassicDiscord = (_ => {
 		}
 
 		processChannelEditorContainer(instance) {
-			if (instance.node) {
+			if (instance && instance.node && instance.node.parentElement) {
 				var gift_icon = instance.node.parentElement.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
 				var gif_icon = instance.node.parentElement.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
 				if (gift_icon) gift_icon.innerHTML = this.icons.oldIcons.gift;
 				if (gif_icon) gif_icon.innerHTML = this.icons.oldIcons.gif;
+				if (instance.node.parentElement.parentElement && instance.node.parentElement.parentElement.parentElement && instance.node.parentElement.parentElement.parentElement.parentElement && instance.node.parentElement.parentElement.parentElement.parentElement.parentElement && instance.node.parentElement.parentElement.parentElement.parentElement.parentElement.tagName === 'FORM') {
+					$('.form-2fGMdU > div').replaceWith(function() {
+						return $('.channelTextArea-rNsIhG.channelTextArea-2VhZ6z', this);
+					});
+				}
 			}
 			// I know I shouldn't do this
 			var gear_icon = document.querySelector('button[aria-label="User Settings"]');

@@ -3,7 +3,7 @@ var ClassicDiscord = (_ => {
 	return class ClassicDiscord {
 		getName() { return "ClassicDiscord"; }
 
-		getVersion() { return "1.1.9"; } 
+		getVersion() { return "1.2.0"; } 
 
 		getAuthor() { return "BannerBomb"; }
 

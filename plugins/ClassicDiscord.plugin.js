@@ -3,7 +3,7 @@ var ClassicDiscord = (_ => {
 	return class ClassicDiscord {
 		getName() { return "ClassicDiscord"; }
 
-		getVersion() { return "1.1.8"; } 
+		getVersion() { return "1.1.9"; } 
 
 		getAuthor() { return "BannerBomb"; }
 
@@ -14,7 +14,10 @@ var ClassicDiscord = (_ => {
 		constructor() {
 			this.changelog = {
 				"fixed": [
-					["Updated","I have updated the plugin structure to work with the new BDFDB structures."]
+					["Textbox Icons", "I have fixed the textbox icons again."]
+				],
+				"progress": [
+					["Note", "I don't plan on updating this plugin as much as I used to because I have other things I have been busy with now."]
 				]
 			};
 			/*
@@ -165,8 +168,8 @@ var ClassicDiscord = (_ => {
 				var classicDiscordStylesheet_Override = document.getElementById('ClassicDiscord_Override');
 				if (classicDiscordStylesheet) classicDiscordStylesheet.remove();
 				if (classicDiscordStylesheet_Override) classicDiscordStylesheet_Override.remove();
-				var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
-				var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
+				var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Send a gift"]`);
+				var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Open GIF picker"]`);
 				var gear_icon = document.querySelector('button[aria-label="User Settings"]');
 				//var crown_icon = document.querySelector('svg[name="Crown"]');
 				if (gift_icon) gift_icon.innerHTML = this.icons.newIcons.gift;
@@ -180,8 +183,8 @@ var ClassicDiscord = (_ => {
 
 		processChannelEditorContainer(instance) {
 			if (instance && instance.node && instance.node.parentElement) {
-				var gift_icon = instance.node.parentElement.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="2"]`);
-				var gif_icon = instance.node.parentElement.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[tabindex="3"]`);
+				var gift_icon = instance.node.parentElement.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Send a gift"]`);
+				var gif_icon = instance.node.parentElement.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Open GIF picker"]`);
 				if (gift_icon) gift_icon.innerHTML = this.icons.oldIcons.gift;
 				if (gif_icon) gif_icon.innerHTML = this.icons.oldIcons.gif;
 				if (instance.node.parentElement.parentElement && instance.node.parentElement.parentElement.parentElement && instance.node.parentElement.parentElement.parentElement.parentElement && instance.node.parentElement.parentElement.parentElement.parentElement.parentElement && instance.node.parentElement.parentElement.parentElement.parentElement.parentElement.tagName === 'FORM') {

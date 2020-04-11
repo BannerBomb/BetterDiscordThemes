@@ -177,7 +177,7 @@ var ClassicDiscord = (_ => {
 				if (gear_icon) gear_icon.innerHTML = this.icons.newIcons.gear;
 				//if (crown_icon) crown_icon.outerHTML = this.icons.newIcons.crown;
 				this.started = false;
-				BDFDB.unloadMessage(this);
+				BDFDB.PluginUtils.clear(this);
 			}
 		}
 

@@ -3,7 +3,7 @@ var ClassicDiscord = (_ => {
 	return class ClassicDiscord {
 		getName() { return "ClassicDiscord"; }
 
-		getVersion() { return "1.2.0"; } 
+		getVersion() { return "1.2.1"; } 
 
 		getAuthor() { return "BannerBomb"; }
 
@@ -133,6 +133,14 @@ var ClassicDiscord = (_ => {
 						document.head.appendChild(classicDiscordStylesheet);
 					}
 				});
+				var classicDiscordVersionInfo = document.getElementById('ClassicDiscordVersionInfo');
+				if (!classicDiscordVersionInfo) {
+					var classicDiscordVersionInfo_elem = document.createElement("style");
+					classicDiscordVersionInfo_elem.setAttribute("id", "ClassicDiscordVersionInfo");
+					classicDiscordVersionInfo_elem.setAttribute("type", "text/css");
+					classicDiscordVersionInfo_elem.innerHTML = `#user-settings nav[class^="sidebar-"] > div > div[class^="info"]:last-child > div:first-child::before {content: "${this.getName()} v${this.getVersion()}";display: block}`;
+					document.head.appendChild(classicDiscordVersionInfo_elem);
+				}
 				var classicDiscordStylesheet_Overrid = document.getElementById('ClassicDiscord_Override');
 				if (classicDiscordStylesheet_Overrid) classicDiscordStylesheet_Overrid.remove();
 				var is_rich_textbox = document.querySelector('.slateContainer-3Qkn2x');//BDFDB.disCN.textareaslatecontainer);
@@ -165,8 +173,10 @@ var ClassicDiscord = (_ => {
 				var bda_dark = document.getElementById('app-mount');
 				if (bda_dark.classList.contains('bda-dark')) bda_dark.classList.remove('bda-dark');
 				var classicDiscordStylesheet = document.getElementById('ClassicDiscord');
+				var classicDiscordVersionInfo = document.getElementById('ClassicDiscordVersionInfo');
 				var classicDiscordStylesheet_Override = document.getElementById('ClassicDiscord_Override');
 				if (classicDiscordStylesheet) classicDiscordStylesheet.remove();
+				if (classicDiscordVersionInfo) classicDiscordVersionInfo.remove();
 				if (classicDiscordStylesheet_Override) classicDiscordStylesheet_Override.remove();
 				var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Send a gift"]`);
 				var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Open GIF picker"]`);

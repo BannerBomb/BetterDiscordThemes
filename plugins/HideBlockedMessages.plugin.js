@@ -103,24 +103,16 @@ var HideBlockedMessages = (_ => {
 					var hideBlockedMessagesCSS = document.createElement("style");
 					hideBlockedMessagesCSS.setAttribute("id", "HideBlockedMessagesCSS");
 					hideBlockedMessagesCSS.setAttribute("type", "text/css");
-					hideBlockedMessagesCSS.innerHTML = `body[hideblockedmessageson] .scrollerInner-2ircaP > .groupStart-23k01U:not(.message-2qnXI6):not(.wrapper-2a6GCs):not(.zalgo-jN1Ica) { display: none } #HideBlockedMessages[HideBlockedMessagesON] > path { d: path("${this.icons.on}") } }`;
+					hideBlockedMessagesCSS.innerHTML = `body[hideblockedmessageson] .scrollerInner-2ircaP > .groupStart-23k01U:not(.message-2qnXI6):not(.wrapper-2a6GCs):not(.zalgo-jN1Ica) { display: none } body[hideblockedmessageson] #HideBlockedMessages > path { d: path("${this.icons.on}") }`;
 					document.head.appendChild(hideBlockedMessagesCSS);
-				}
-				
-				if (!document.getElementById('HideBlockedMessagesToggleCSS')) {
-					var toggleCSS = document.createElement("style");
-					toggleCSS.setAttribute("id", "HideBlockedMessagesToggleCSS");
-					toggleCSS.setAttribute("type", "text/css");
-					toggleCSS.innerHTML = `body[hideblockedmessageson] #HideBlockedMessages > path { d: path("${this.icons.on}") }`;
-					document.head.appendChild(toggleCSS);
 				}
 
 				var hideBlockedMessagesToggle = document.getElementById('HideBlockedMessages');
 				if (!hideBlockedMessagesToggle) {
 					$('div.chat-3bRxxu > section.title-3qD0b-.container-1r6BKw.themed-ANHk51 > div.toolbar-1t6TWx')
 						.prepend(`<div class="iconWrapper-2OrFZ1 da-iconWrapper clickable-3rdHwn da-clickable focusable-1YV_-H da-focusable" role="switch" aria-label="Hide blocked messages" aria-checked="false" tabindex="0"><svg version="1.1" id="HideBlockedMessages" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon-22AiRD da-icon" aria-hidden="false" width="24" height="24" viewBox="0 0 100 100"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="${this.icons.off}"/></svg></div>`)
-						.click(() => {
-							document.body.toggleAttribute('hideblockedmessageson');
+						.click((e) => {
+							if (['svg'].includes(e.target.nodeName)) document.body.toggleAttribute('hideblockedmessageson');
 						});
 				}
 
@@ -141,8 +133,6 @@ var HideBlockedMessages = (_ => {
 			if (window.BDFDB && typeof BDFDB === "object" && BDFDB.loaded) {
 				var hideMessagesCSS = document.getElementById('HideBlockedMessagesCSS');
 				if (hideMessagesCSS) hideMessagesCSS.remove();
-				var toggleCSS = document.getElementById('HideBlockedMessagesToggleCSS');
-				if (toggleCSS) toggleCSS.remove();
 				var hideBlockedMessagesToggle = document.getElementById('HideBlockedMessages');
 				if (hideBlockedMessagesToggle) hideBlockedMessagesToggle.parentElement.remove();
 				this.started = false;
@@ -156,8 +146,8 @@ var HideBlockedMessages = (_ => {
 				if (!hideBlockedMessagesToggle) {
 					$('div.chat-3bRxxu > section.title-3qD0b-.container-1r6BKw.themed-ANHk51 > div.toolbar-1t6TWx')
 						.prepend(`<div class="iconWrapper-2OrFZ1 da-iconWrapper clickable-3rdHwn da-clickable focusable-1YV_-H da-focusable" role="switch" aria-label="Hide blocked messages" aria-checked="false" tabindex="0"><svg version="1.1" id="HideBlockedMessages" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon-22AiRD da-icon" aria-hidden="false" width="24" height="24" viewBox="0 0 100 100"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="${this.icons.off}"/></svg></div>`)
-						.click(() => {
-							document.body.toggleAttribute('hideblockedmessageson');
+						.click((e) => {
+							if (['svg'].includes(e.target.nodeName)) document.body.toggleAttribute('hideblockedmessageson');
 						});
 				} 
 			//}

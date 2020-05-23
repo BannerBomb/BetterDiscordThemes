@@ -3,7 +3,7 @@ var HideBlockedMessages = (_ => {
 	return class HideBlockedMessages {
 		getName() { return "HideBlockedMessages"; }
 
-		getVersion() { return "1.0.0"; } 
+		getVersion() { return "1.0.1"; } 
 
 		getAuthor() { return "BannerBomb"; }
 

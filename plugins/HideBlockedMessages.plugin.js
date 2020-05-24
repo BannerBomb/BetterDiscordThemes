@@ -3,7 +3,7 @@ var HideBlockedMessages = (_ => {
 	return class HideBlockedMessages {
 		getName() { return "HideBlockedMessages"; }
 
-		getVersion() { return "1.0.3"; } 
+		getVersion() { return "1.0.4"; } 
 
 		getAuthor() { return "BannerBomb"; }
 
@@ -59,7 +59,9 @@ var HideBlockedMessages = (_ => {
 				type: "Switch",
 				plugin: this,
 				keys: ["settings", key],
+				disabled: true,
 				label: this.defaults.settings[key].description,
+				note: 'This is used for persistent storage.',
 				value: settings[key]
 			}));
 			return settingspanel = BDFDB.PluginUtils.createSettingsPanel(this, settingsitems);

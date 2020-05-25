@@ -3,7 +3,7 @@ var HideBlockedMessages = (_ => {
 	return class HideBlockedMessages {
 		getName() { return "HideBlockedMessages"; }
 
-		getVersion() { return "1.0.4"; } 
+		getVersion() { return "1.0.5"; } 
 
 		getAuthor() { return "BannerBomb"; }
 
@@ -95,13 +95,8 @@ var HideBlockedMessages = (_ => {
 			if (window.BDFDB && typeof BDFDB === "object" && BDFDB.loaded) {
 				if (this.started) return;
 				BDFDB.PluginUtils.init(this);
-				//var settingHideBlockedMessages = BDFDB.DataUtils.load(this, "settings");
 				const settings = BDFDB.DataUtils.get(this, "settings");
 				if (settings.hideBlockedMessages) document.body.toggleAttribute('hideblockedmessageson', true);
-				/*if (settings.darkMode) {
-					var bda_dark = document.getElementById('app-mount');
-					if (!bda_dark.classList.contains('bda-dark')) bda_dark.classList.add('bda-dark');
-				}*/
 				if (!document.getElementById('HideBlockedMessagesCSS')) {
 					var hideBlockedMessagesCSS = document.createElement("style");
 					hideBlockedMessagesCSS.setAttribute("id", "HideBlockedMessagesCSS");
@@ -114,6 +109,7 @@ var HideBlockedMessages = (_ => {
 				if (!hideBlockedMessagesToggle) {
 					$('div.chat-3bRxxu > section.title-3qD0b-.container-1r6BKw.themed-ANHk51 > div.toolbar-1t6TWx')
 						.prepend(`<div class="iconWrapper-2OrFZ1 da-iconWrapper clickable-3rdHwn da-clickable focusable-1YV_-H da-focusable" role="switch" aria-label="Hide blocked messages" aria-checked="false" tabindex="0"><svg version="1.1" id="HideBlockedMessages" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon-22AiRD da-icon" aria-hidden="false" width="24" height="24" viewBox="0 0 100 100"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="${this.icons.off}"/></svg></div>`)
+					$('div.chat-3bRxxu > section.title-3qD0b-.container-1r6BKw.themed-ANHk51 > div.toolbar-1t6TWx > div[aria-label="Hide blocked messages"]')
 						.click((e) => {
 							BDFDB.DataUtils.save({ hideBlockedMessages: document.body.toggleAttribute('hideblockedmessageson') }, this, "settings");
 						});
@@ -144,16 +140,15 @@ var HideBlockedMessages = (_ => {
 		}
 
 		processChannelEditorContainer(instance) {
-			//if (instance && instance.node && instance.node.parentElement) {
-				var hideBlockedMessagesToggle = document.getElementById('HideBlockedMessages');
-				if (!hideBlockedMessagesToggle) {
-					$('div.chat-3bRxxu > section.title-3qD0b-.container-1r6BKw.themed-ANHk51 > div.toolbar-1t6TWx')
-						.prepend(`<div class="iconWrapper-2OrFZ1 da-iconWrapper clickable-3rdHwn da-clickable focusable-1YV_-H da-focusable" role="switch" aria-label="Hide blocked messages" aria-checked="false" tabindex="0"><svg version="1.1" id="HideBlockedMessages" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon-22AiRD da-icon" aria-hidden="false" width="24" height="24" viewBox="0 0 100 100"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="${this.icons.off}"/></svg></div>`)
-						.click((e) => {
-							BDFDB.DataUtils.save({ hideBlockedMessages: document.body.toggleAttribute('hideblockedmessageson') }, this, "settings");
-						});
-				} 
-			//}
+			var hideBlockedMessagesToggle = document.getElementById('HideBlockedMessages');
+			if (!hideBlockedMessagesToggle) {
+				$('div.chat-3bRxxu > section.title-3qD0b-.container-1r6BKw.themed-ANHk51 > div.toolbar-1t6TWx')
+					.prepend(`<div class="iconWrapper-2OrFZ1 da-iconWrapper clickable-3rdHwn da-clickable focusable-1YV_-H da-focusable" role="switch" aria-label="Hide blocked messages" aria-checked="false" tabindex="0"><svg version="1.1" id="HideBlockedMessages" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon-22AiRD da-icon" aria-hidden="false" width="24" height="24" viewBox="0 0 100 100"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="${this.icons.off}"/></svg></div>`)
+				$('div.chat-3bRxxu > section.title-3qD0b-.container-1r6BKw.themed-ANHk51 > div.toolbar-1t6TWx > div[aria-label="Hide blocked messages"]')
+					.click((e) => {
+						BDFDB.DataUtils.save({ hideBlockedMessages: document.body.toggleAttribute('hideblockedmessageson') }, this, "settings");
+					});
+			} 
 		}
 
 		forceUpdateAll() {

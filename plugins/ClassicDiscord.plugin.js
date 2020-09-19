@@ -4,7 +4,7 @@ module.exports = (_ => {
 		"info": {
 			"name": "ClassicDiscord",
 			"author": "BannerBomb",
-			"version": "1.3.0",
+			"version": "1.3.1",
 			"description": "Fully brings back discord's old Dark and Light modes. Thanks to Ownsin#0001 for helping spot the bugs.",
 			"rawURL": "https://raw.githubusercontent.com/BannerBomb/BetterDiscordThemes/master/plugins/ClassicDiscord.plugin.js"
 		}
@@ -101,7 +101,6 @@ module.exports = (_ => {
 			}
 
 			getSettingsPanel() {
-				if (!window.BDFDB || typeof BDFDB != "object" || !BDFDB.loaded || !this.started) return;
 				let settings = BDFDB.DataUtils.get(this, "settings");
 				let settingspanel, settingsitems = [];
 
@@ -173,26 +172,24 @@ module.exports = (_ => {
 			}
 
 			onStop() {
-				if (window.BDFDB && typeof BDFDB === "object" && BDFDB.loaded) {
-					var bda_dark = document.getElementById('app-mount');
-					if (bda_dark.classList.contains('bda-dark')) bda_dark.classList.remove('bda-dark');
-					var classicDiscordStylesheet = document.getElementById('ClassicDiscord');
-					var classicDiscordVersionInfo = document.getElementById('ClassicDiscordVersionInfo');
-					var classicDiscordStylesheet_Override = document.getElementById('ClassicDiscord_Override');
-					if (classicDiscordStylesheet) classicDiscordStylesheet.remove();
-					if (classicDiscordVersionInfo) classicDiscordVersionInfo.remove();
-					if (classicDiscordStylesheet_Override) classicDiscordStylesheet_Override.remove();
-					var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Send a gift"]`);
-					var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Open GIF picker"]`);
-					var gear_icon = document.querySelector('button[aria-label="User Settings"]');
-					//var crown_icon = document.querySelector('svg[name="Crown"]');
-					if (gift_icon) gift_icon.innerHTML = this.icons.newIcons.gift;
-					if (gif_icon) gif_icon.innerHTML = this.icons.newIcons.gif;
-					if (gear_icon) gear_icon.innerHTML = this.icons.newIcons.gear;
-					//if (crown_icon) crown_icon.outerHTML = this.icons.newIcons.crown;
-					this.started = false;
-					BDFDB.PluginUtils.clear(this);
-				}
+				var bda_dark = document.getElementById('app-mount');
+				if (bda_dark.classList.contains('bda-dark')) bda_dark.classList.remove('bda-dark');
+				var classicDiscordStylesheet = document.getElementById('ClassicDiscord');
+				var classicDiscordVersionInfo = document.getElementById('ClassicDiscordVersionInfo');
+				var classicDiscordStylesheet_Override = document.getElementById('ClassicDiscord_Override');
+				if (classicDiscordStylesheet) classicDiscordStylesheet.remove();
+				if (classicDiscordVersionInfo) classicDiscordVersionInfo.remove();
+				if (classicDiscordStylesheet_Override) classicDiscordStylesheet_Override.remove();
+				var gift_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Send a gift"]`);
+				var gif_icon = document.querySelector(`${BDFDB.dotCN.textareapickerbuttons} button[aria-label="Open GIF picker"]`);
+				var gear_icon = document.querySelector('button[aria-label="User Settings"]');
+				//var crown_icon = document.querySelector('svg[name="Crown"]');
+				if (gift_icon) gift_icon.innerHTML = this.icons.newIcons.gift;
+				if (gif_icon) gif_icon.innerHTML = this.icons.newIcons.gif;
+				if (gear_icon) gear_icon.innerHTML = this.icons.newIcons.gear;
+				//if (crown_icon) crown_icon.outerHTML = this.icons.newIcons.crown;
+				this.started = false;
+				BDFDB.PluginUtils.clear(this);
 			}
 
 			processChannelEditorContainer(instance) {

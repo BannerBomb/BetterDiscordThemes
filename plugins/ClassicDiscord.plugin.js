@@ -4,7 +4,7 @@ module.exports = (_ => {
 		"info": {
 			"name": "ClassicDiscord",
 			"author": "BannerBomb",
-			"version": "1.3.1",
+			"version": "1.3.2",
 			"description": "Fully brings back discord's old Dark and Light modes. Thanks to Ownsin#0001 for helping spot the bugs.",
 			"rawURL": "https://raw.githubusercontent.com/BannerBomb/BetterDiscordThemes/master/plugins/ClassicDiscord.plugin.js"
 		}
@@ -45,6 +45,7 @@ module.exports = (_ => {
 		start() {}
 		stop() {}
 	} : (([Plugin, BDFDB]) => {
+		var settings = {};
 		return class ClassicDiscord extends Plugin {
 			onLoad() {
 				this.changelog = {
@@ -210,6 +211,8 @@ module.exports = (_ => {
 			}
 
 			forceUpdateAll() {
+				settings = BDFDB.DataUtils.get(this, "settings");
+
 				BDFDB.PatchUtils.forceAllUpdates(this);
 				BDFDB.MessageUtils.rerenderAll();
 			}

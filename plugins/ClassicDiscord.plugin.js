@@ -4,7 +4,7 @@ module.exports = (_ => {
 		"info": {
 			"name": "ClassicDiscord",
 			"author": "BannerBomb",
-			"version": "1.3.2",
+			"version": "1.3.3",
 			"description": "Fully brings back discord's old Dark and Light modes. Thanks to Ownsin#0001 for helping spot the bugs.",
 			"rawURL": "https://raw.githubusercontent.com/BannerBomb/BetterDiscordThemes/master/plugins/ClassicDiscord.plugin.js"
 		}
@@ -102,7 +102,6 @@ module.exports = (_ => {
 			}
 
 			getSettingsPanel() {
-				let settings = BDFDB.DataUtils.get(this, "settings");
 				let settingspanel, settingsitems = [];
 
 				for (let key in settings) settingsitems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsSaveItem, {
